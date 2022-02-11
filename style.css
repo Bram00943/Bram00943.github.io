@@ -9,3 +9,77 @@ body {
     width: 100%;
     height: 300px;
 }
+.button{
+  display: inline-block;
+  background-color: #3482a7;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50%;
+  transition-duration: 0.05s;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(5deg);
+}
+.button:hover{
+  background-color: #2c7394;
+}
+.button:active {
+  background-color: #2c7394;
+  box-shadow: 0 5px rgb(27, 27, 27);
+  transform: translateY(1px);
+}
+
+.button2{
+  display: inline-block;
+  background-color: #3482a7;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50%;
+  transition-duration: 0.05s;
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(-5deg);
+}
+.button2:hover{
+  background-color: #2c7394;
+}
+.button2:active {
+  background-color: #2c7394;
+  box-shadow: 0 5px rgb(27, 27, 27);
+  transform: translateY(1px);
+}
+
+
+
+.button3{
+  display: inline-block;
+  background-color: #3482a7;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50%;
+  transition-duration: 0.05s;
+  position: absolute;
+  top: 45%;
+  left: 46%;
+}
+.button3:hover{
+  background-color: #2c7394;
+}
+.button3:active {
+  background-color: #2c7394;
+  box-shadow: 0 5px rgb(27, 27, 27);
+  transform: translateY(1px);
+}
