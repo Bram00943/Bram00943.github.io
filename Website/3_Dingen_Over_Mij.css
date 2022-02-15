@@ -1,0 +1,170 @@
+.NameText{
+    font-size: 20px;
+}
+.NameTextFont{
+    text-align: center;
+}
+
+.NameTextBorder{
+    background-color: #000096;
+    height: 100px;
+    border-bottom: 10px solid #0000ff;
+}
+.NameTextPosition{
+    color: #ccffff; 
+    padding-top: 30px;
+}
+
+
+body{
+    background-image: url('Images/background');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    background-color: #000096;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #000096;
+}
+  
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color:#ccffff; ;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #0000ff;
+    color: white;
+}
+.topnav .current{
+    background-color:#0000ff;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
+/*end nav*/
+
+
+
+.DingenovermijAllText{
+    color:white;
+}
+.dingenovermijTitle{
+    left: 100px;
+    position: absolute; 
+    top: 5px; 
+}
+.dingenovermijText1{
+    left: 390px;
+    position: absolute; 
+    top: 170px; 
+    font-size: 18px;
+    z-index: -1;
+}
+
+
+
+
+
+.GamesTitle{
+    left: 650px;
+    position: absolute; 
+    top: 240px; 
+    z-index: -1;
+}
+.GamesText{
+    left: 450px;
+    position: absolute; 
+    top: 280px; 
+    z-index: -1;
+}
+
+.SportTitle{
+    left: 140px;
+    position: absolute; 
+    top: 730px; 
+    z-index: -1;
+}
+.SportText{
+    left: 75px;
+    position: absolute; 
+    top: 770px;
+    z-index: -1;
+}
+
+.HoeBenIkTitle{
+    right: 400px;
+    position: absolute; 
+    top: 1260px;
+}
+.HoeBenIkText{
+    right: 75px;
+    position: absolute; 
+    top: 1300px;
+}
+
+/*Images*/
+.ImageMetRuf{
+    height: 200px;
+    left: 550px;
+    position: absolute; 
+    top: 520px; 
+    z-index: -1;
+}
+.LoLVideo{
+    position: absolute; 
+    right: 840px; 
+    top: 305px;
+    z-index: -1;
+}
+.IkMetOortjes{
+    height: 250px;
+    left: 85px;
+    position: absolute; 
+    top: 970px;
+    z-index: -1;
+}
+.SoccerVideo{
+    position: absolute; 
+    right: 40px; 
+    top: 760px;
+    z-index: -1;
+}
+.IkOpFiets{
+    height: 250px;
+    position: absolute; 
+    right: 335px;
+    top: 1480px;  
+}
+.SongVideo{
+    left: 120px;
+    position: absolute;  
+    top: 1300px;
+}

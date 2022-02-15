@@ -1,0 +1,128 @@
+body{
+
+    margin: 0;
+}
+h1{
+    border-top: 120px solid #484848;
+    margin-top: 0px;
+}
+.Bordertext{
+    color: #dcdcdc;
+    font-size: 50px;
+    position: absolute;
+    top: -40px;
+    left: 410px;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.Youtube{
+    height: 40px;
+    width: 150px;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.Instagram{
+    height: 40px;
+    width: 150px;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+.Reddit{
+    height: 40px;
+    width: 150px;
+}
+
+.IconPos{
+    text-align: center;
+}
+
+.Tiktok{
+    height: 35px;
+    width: 45px;
+}
+.TiktokBackground{
+    background: black;
+    height: 75px;
+    width: 195px;
+}
+.Tiktok:hover{
+    opacity: 0.7;
+}
+
+
+/*scrollbar */
+section{
+    background: #dcdcdc;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.001);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #d2d7dd, #484848);
+    animation: animate 5s linear infinite;   
+}
+@keyframes animate{
+    0%, 100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #d2d7dd, #484848);
+    filter: blur(10px);
+
+}
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #d2d7dd, #484848);
+    filter: blur(30px);
+} 
+/* einde scrollbar */

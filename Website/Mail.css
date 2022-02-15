@@ -1,0 +1,80 @@
+.MailNameText{
+    font-size: 20px;
+}
+.MailNameTextFont{
+    text-align: center;
+}
+
+.MailNameTextBorder{
+    border-bottom: 5px solid #0000ff;
+    background-color: #000096;
+    height: 75px;
+}
+.MailNameTextPosition{
+    color: #ccffff; 
+    padding-top: 15px;
+}
+
+
+
+body{
+    background-image: url('Images/background');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #000096;
+}
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color:#ccffff; ;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #0000ff;
+    color: white;
+}
+.topnav .current{
+    background-color:#0000ff;
+}
+
+
+
+.MailNamePosition{
+    position: absolute; 
+    left:15%; 
+    top:200px;
+}
+.MailMailPosition{
+    position: absolute; 
+    left: 15%; 
+    top:260px
+}
+.MailCommentPosition{
+    position: absolute; 
+    left: 15%; 
+    top:330px;
+}
+.MailTextBox{
+    height:200px;
+    width:600px; 
+}
+.MailTextNameColor{
+    color: white;
+}

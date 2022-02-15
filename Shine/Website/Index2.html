@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mijn pagina</title>
+    <link rel="stylesheet" href="Index2.css">
+    <link rel="icon" href="Images/website_favicon_2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+    <body>
+      <div>
+        <div class="NameText NameTextFont NameTextBorder">
+              <h1 class="NameTextPosition">
+                Bram Nieuwland
+              </h1>
+        </div>
+        <div>
+          <div id="navbar">
+            <div class="topnav">
+              <a href="Practice_Tabel.html">Specs</a>
+              <a href="Practice_schoenmaat.html">Schoenmaat</a>
+              <a href="Practice_Mail.html">Mail</a>
+              <a href="Practice_3_Dingen_Over_Mijzelf.html">Over mij</a>
+              <a class="current" href="Index2.html"><i class="fa fa-home"></i> Home</a>
+            </div>
+          </div>
+          <script>
+          window.onscroll = function() {myFunction()};
+          
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+            }
+          </script>
+        </div>
+        <div class="TextFontTesla" style="padding: 20px;">
+          <p>
+          <br>
+          <br>
+          <div>
+            <img class="TeslaPicture" src="Images/Foto van mezelf met tesla.jpg" alt="Tesla">
+          </div>
+            Hallo mijn naam is Bram Nieuwland ik ben op dit moment 17 jaar en ik volg de opleiding Software Development op het Sint Lucas.<br>
+            Ik kan hier niet al te veel over mijzelf gaan vertellen want ik heb nog andere pagina’s te vullen met tekst.<br>
+            Maar ik zal een beetje hier op deze pagina jullie introduceren wat ik hier doe en waarom.<br>
+            Ik heb verteld dat ik de opleiding Software Developer volg en daarvoor is het nodig om jezelf in te beelden <br>
+            wat de mensen doen als je samen met hun samen moet gaan werken.<br>
+            Natuurlijk is websites maken niet waarvoor ik ben gekomen maar het is wel altijd handig als<br>
+            wij weten wat er gebeurd voordat wij moeten gaan programmeren.
+            Het is nu ook niet echt zo<br> heel verdiepend wat we nu aan het doen zijn.
+            Wij zijn nu bezig met de basis van het maken van de websites.<br>
+            Ik heb er voor gekozen om in totaal 4 pagina’s te maken met wat informatie van mij en nog wat andere dingen.</p>
+        </div>
+        <div style="position: absolute; left: 180px; top: 600px;">
+          <div class="EmotieButtonImage">
+            <div>
+              <img class="EmotieImageSize" src="Images/emotie foto.jpeg" alt="emotie">
+              <div style="position: absolute; right: 65px;">
+              <a href="Practice_3_Dingen_Over_Mijzelf.html" class="button button6">Hoe ben ik?</a>
+              </div>
+            </div>
+          </div>
+          <div class="VoetballbuttonImage">
+            <div>
+              <img class="VoetbalImageSize" src="Images/voetbal foto.JPG" alt="Voetbal">
+              <div style="position: absolute; left: 385px">
+              <a href="Practice_3_Dingen_Over_Mijzelf.html" class="button button5">Sport</a>
+              </div>
+            </div>
+          </div>
+          <div class="GamingbuttonImage">
+            <div>  
+              <img class="GamingImageSize" src="Images/gaming foto.jpeg" alt="gaming foto">
+                <div style="position: absolute; left: 80px">
+                  <a href="Practice_3_Dingen_Over_Mijzelf.html" class="button button4">Games</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

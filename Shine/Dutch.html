@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Dutch.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="Images/BFavicon.png">
+  <title>DUTCH</title>
+</head>
+<style>
+    .sidebar {width: 120px;background: rgba(199, 195, 201, 0.76);}
+    #main {margin-left: 120px}
+</style>
+<body>
+    <div id="Current" style="position: relative; left: -28px; top: -28px;"> <!--navbar left-->
+        <nav class="sidebar bar-block center">
+            <a href="Index.html" class="bar-item button padding-large hover-black ">
+                <i class="fa fa-home xxlarge"></i>
+                <p style="font-size: 12px;">HOME</p>
+            </a>
+            <a class="bar-item color padding-large hover-black">
+              <br>
+              <br> <!--Hier staan 3 streepjes met fixed position.-->
+              <br>  
+                <p style="font-size: 12px;">MENU</p>
+            </a>
+        </nav>
+      </div>
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+<section>
+  <div class="main" style="position:relative; left: 55px">
+    <div id="textfade">
+        <h1 class="TextColor">Dutch</h1>
+        <hr>
+
+        <h2 class="TextColor">PORTFOLIO</h2>
+        <p class="TextColor">Here are some projects I made for the subject Dutch/Nederlands.</p>
+    </div>
+    <div class="row">
+        <div id="fade1" class="column">
+            <div class="content Divborder">
+                <div class="gallery">
+                    <div class="block glow" style="z-index: 1; width: 180px; height: 235.5px;">
+                        <a target="_self" href="Images/NederlandsVoorpagina2.JPG">
+                            <img src="Images/NederlandsVoorpagina2.JPG" alt="VoorpaginaTijdschrift_foto" width="600" height="400" class="hover-shadow cursor">
+                        </a>
+                    </div>
+                </div>
+              <h3>Magazine</h3>
+              <p>All the photo's on this page are all part of a magazine we had to make. The magazine had to include at least 3 topics, where 
+                  we had to write a column, a review, and a interview. I lost the interview document so that's why I put a different assignment
+                  on this page.
+              </p>
+            </div>
+        </div>
+
+        <div id="fade2" class="column">
+            <div class="content Divborder">
+                <div class="gallery">
+                    <div class="block glow" style="z-index: 1; width: 180px; height: 217.5px;">
+                    <a target="_self" href="Images/NederlandsLeagueVerhaal.png">
+                        <img src="Images/NederlandsLeagueVerhaal.png" alt="League Verhaal" width="600" height="400" class="hover-shadow cursor">
+                    </a>
+                    </div>
+                </div>
+              <h3>Review</h3>
+              <p>For this assignement we had to write a review about something a game or a movie or whatever you like. I chose 
+                  League of legends a game that I very often play whenever I have some free time left.
+              </p>
+            </div>
+        </div>
+
+        <div id="fade3" class="column">
+            <div class="content Divborder">
+                <div class="gallery">
+                    <div class="block glow" style="z-index: 1; width: 180px; height: 153.5px;">
+                        <a target="_self" href="Images/NederlandsBarcaColumn.png">
+                            <img src="Images/NederlandsBarcaColumn.png" alt="Barça Column" width="600" height="400" class="hover-shadow cursor">
+                        </a>
+                    </div>
+                </div>
+              <h3>Column</h3>
+              <p>This assignement we had to write a column about something that was going on at the time I chose the Football club
+                  FC Barcelona. Since Koeman was the new assigned trainer and he was making a few mistakes which a lot of people 
+                  disagreed with.   
+              </p>
+            </div>
+        </div>
+        
+        <div id="fade4" class="column">
+            <div class="content Divborder">
+                <div class="gallery">
+                    <div class="block glow" style="z-index: 1; width: 180px; height: 137px;">
+                        <a target="_self" href="Images/NederlandsToekomstBrief.png">
+                            <img src="Images/NederlandsToekomstBrief.png" alt="DutchLetter" width="600" height="400" class="hover-shadow cursor">
+                        </a>
+                    </div>
+                </div>
+                <h3>Future Letter</h3>
+                <p>For this assignment we had to write a letter for ourselves in 4 years after I finish my study on Sint Lucas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fade5" class="content Divborder">
+      <h2>Dutch/Nederlands</h2>
+      <p>This subject is mainly focused on improving our main language and our grammar. I would say i'm pretty decent at this subject.
+          Although sometimes it's not as fun but like I always do, I try my best to make somthing good out of it and try to learn from it.<p>
+    </div>
+  </div>
+</section>
+<div id="btn">
+    <div id='top'></div>
+    <div id='middle'></div>
+    <div id='bottom'></div>
+  </div>
+  <div id="box">
+    <div id="items">
+        <div class="item"><span><a href="Creativity.html">Creativity</a></span></div>
+        <div class="item"><span><a href="WebDesign.html">WebDesign</a></span></div>
+        <div class="item currentpage"><span><a href="Dutch.html">Dutch</a></span></div>
+        <div class="item"><span><a href="Personality.html">Personality</a></span></div>
+        <div class="item"><span><a href="English.html">English</a></span></div>
+        <div class="item"><span><a href="DigitalSkills.html">DigitalSkills</a></span></div>
+    </div>
+  </div>
+  <script> //voor navbar MENU
+    const sidebarBox = document.querySelector('#box'),
+      sidebarBtn = document.querySelector('#btn'),
+      pageWrapper = document.querySelector('#page-wrapper');
+
+  sidebarBtn.addEventListener('click', event => {
+      sidebarBtn.classList.toggle('active');
+      sidebarBox.classList.toggle('active');
+  });
+
+  pageWrapper.addEventListener('click', event => {
+
+      if (sidebarBox.classList.contains('active')) {
+          sidebarBtn.classList.remove('active');
+          sidebarBox.classList.remove('active');
+      }
+  });
+
+  window.addEventListener('keydown', event => {
+
+      if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
+          sidebarBtn.classList.remove('active');
+          sidebarBox.classList.remove('active');
+      }
+  });
+  </script>
+<script type="text/javascript">
+  let progress = document.getElementById('progressbar'
+      );
+  let totalHeight = document.body.scrollHeight - 
+      window.innerHeight;
+  window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / 
+          totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+   }
+</script>
+
+<script> // Currentpage hightlight in navbar MENU 
+    var header = document.getElementById("items");
+    var btns = header.getElementsByClassName("item");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.NameText{
+    font-size: 20px;
+}
+.NameTextFont{
+    text-align: center;
+}
+.NameTextBorder{
+    background-color: #000096;
+    height: 75px;
+    border-bottom: 5px solid #0000ff;
+}
+.SchoenmaatTextPosition{
+    color: #ccffff; 
+    padding-top: 15px;
+}
+
+
+
+
+
+
+body{
+    background-image: url('Images/background');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+/*navigation buttons*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #000096;
+}
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color:#ccffff; ;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #0000ff;
+    color: white;
+}
+.topnav .current{
+    background-color:#0000ff;
+}
+
+
+
+
+
+
+
+
+.SchoenmaatTextAlign{
+    text-align: center;
+}
+
+.FontImageSize{
+    font-size: 20px;
+}
+.TextColorSchoenmaat{
+    color: white;
+}
+.ShoeImageSize{
+    height:200px;
+}

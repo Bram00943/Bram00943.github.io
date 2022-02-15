@@ -1,0 +1,153 @@
+/*Bram Nieuwland titel naam*/
+.NameText{
+    font-size: 20px;
+}
+.NameTextFont{
+    text-align: center;
+}
+.NameTextBorder{
+    background-color: #000096;
+    height: 75px;
+    border-bottom: 5px solid #0000ff;
+}
+.NameTextPosition{
+    color: #ccffff; 
+    padding-top: 30px;
+}
+
+
+body{
+    background-image: url('Images/background');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+/*nav*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #000096;
+}
+  
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color:#ccffff; ;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #0000ff;
+    color: white;
+}
+  .topnav .current{
+    background-color:#0000ff;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
+/*end nav*/
+
+
+/*tesla foto index2*/
+.TextFontTesla{
+    color:white;
+}
+.TeslaPicture{
+    float:right;
+    height:350px;
+}
+
+/*buttons index2 + foto's*/
+.center{
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button{
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button1 {
+    background-color: #DC143C;
+}        
+.button2 {
+    background-color: #D2691E;
+}         
+.button3 {
+    background-color: #F08080;
+}
+.button4 {
+    background-color: #FF1493;
+}
+.button5 {
+    background-color: #9ACD32;
+}
+.button6 {
+    background-color: #FFD700;
+}
+
+
+/*buttons index2*/
+.EmotieButtonImage{
+    float:right; 
+    height:102px;
+    margin:5px;
+    width: 280px; 
+}
+.EmotieImageSize{
+    height:237px;
+    width:282px;
+}
+
+.VoetballbuttonImage{
+    float:right; 
+    height:102px;
+    margin:5px;
+    width: 280px; 
+}
+.VoetbalImageSize{
+    height:237px;
+    width:282px;
+}
+
+.GamingbuttonImage{
+    float:right; 
+    height:102px;
+    margin:5px;
+    width: 280px; 
+}
+.GamingImageSize{
+    height:237px;
+    width:282px;
+}

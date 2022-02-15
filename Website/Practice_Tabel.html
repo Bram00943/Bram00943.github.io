@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Specificaties</title>
+      <link rel="icon" href="Images/website_favicon_2.png">
+      <link rel="stylesheet" href="Tabel_Specs_Laptop.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+  <body>
+    <div>
+        <div class="NameText NameTextFont NameTextBorder">
+            <h1 class="NameTextPosition">
+              Specs
+            </h1>
+        </div>
+        <div>
+          <div id="navbar">
+            <div class="topnav">
+              <a class="current" href="Practice_Tabel.html">Specs</a>
+              <a href="Practice_schoenmaat.html">Schoenmaat</a>
+              <a href="Practice_Mail.html">Mail</a>
+              <a href="Practice_3_Dingen_Over_Mijzelf.html">Over mij</a>
+              <a href="Index2.html"><i class="fa fa-home"></i> Home</a>
+            </div>
+          </div>
+        </div>
+        <script>
+          window.onscroll = function() {myFunction()};
+          
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+            }
+          </script>
+        <div class="SpecsMargin">
+            <div>
+              <p class="SpecsTextcolor">Hey jij ook hier? Op deze pagina laat ik met behulp van een tabel zien wat de specs van mijn laptop zijn. Ik hoop dat het een beetje duidelijk is.</p>
+            </div>
+            <br>
+            <div>
+              <h2 class="TitleTable">Msi Prestige 14 A10RB</h2>
+              <img src="Images/Msi_Laptop.jpg" alt="MSi_laptop" class="MsiPictureSize">
+              <div>
+                <button type="button" class="collapsible">Specificaties</button>
+                <div class="content">
+                  <table>
+                    <tr>
+                    </tr>
+                    <tr>
+                      <td>Processor type</td>
+                      <td>Intel Core i7 10510U</td>
+                    </tr>
+                    <tr>
+                      <td>Geheugen Capiciteit</td>
+                      <td>16 GB</td>
+                    </tr>
+                    <tr>
+                      <td>Resolutie</td>
+                      <td>1920x1080</td>
+                    </tr>
+                    <tr>
+                      <td>Touchscreen</td>
+                      <td>x</td>
+                    </tr>
+                    <tr>
+                      <td>Gewicht Totaal</td>
+                      <td>1,19 kg</td>
+                    </tr>
+                    <tr>
+                      <td>Totale Opslagcapiciteit</td>
+                      <td>512 GB</td>
+                    </tr>
+                    <tr>
+                  </table>
+                </div>
+                <button type="button" class="collapsible">Graphics</button>
+                <div class="content">
+                  <table>
+                  <td>GPU Type</td>
+                  <td>Nvidia GeForce MX250</td>
+                  </tr>
+                  <tr>
+                    <td>Geïntegreerde / losse GPU</td>
+                    <td>Geïntegreerd</td>
+                  </tr>
+                  <tr>
+                    <td>Videogeheugen</td>
+                    <td>2 GB</td>
+                  </tr>
+                  </table>
+                </div>
+                <button type="button" class="collapsible">Process / Chipset / Geheugen</button>
+                <div class="content">
+                  <table>
+                    <td>Processor Type</td>
+                    <td>Intel Core i7 10510U</td>
+                    </tr>
+                    <tr>
+                        <td>Processor Klokfrequentie</td>
+                        <td>1,8 GHz</td>
+                    </tr>
+                    <tr>
+                        <td>Processor Klokfrequentie (max. turbo)</td>
+                        <td>4,9 GHz</td>
+                    </tr>
+                    <tr>
+                        <td>Aantal Processorcores</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Geheugen Capiciteit</td>
+                        <td>16 GB</td>
+                    </tr>
+                    <tr>
+                        <td>Type Geheugen</td>
+                        <td>DDR4</td>
+                    </tr>
+                    <tr>
+                        <td>SODIMM Sloten</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Werkgeheugen Uitbreidbaar tot</td>
+                        <td>32 GB</td>
+                    </tr>
+                  </table>
+                </div>
+                <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {                  
+                  var content1 = coll[i].nextElementSibling;
+                  coll[i].classList.remove("active");
+                  content1.style.display = "none";
+
+                  coll[i].addEventListener("click", function() {
+                    var content = this.nextElementSibling;
+                    this.classList.toggle("active");
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                </script>
+              </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

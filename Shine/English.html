@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="English.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="Images/BFavicon.png">
+  <title>English</title>
+</head>
+<style>
+    .sidebar {width: 120px;background: rgba(199, 195, 201, 0.76); z-index: 0;}
+    #main {margin-left: 120px}
+</style>
+<body>
+    <div id="Current" style="position: relative; left: -28px; top: -28px;"> <!--navbar left-->
+        <nav class="sidebar bar-block center">
+            <a href="Index.html" class="bar-item button padding-large hover-black ">
+                <i class="fa fa-home xxlarge"></i>
+                <p style="font-size: 12px;">HOME</p>
+            </a>
+            <a class="bar-item color padding-large hover-black">
+              <br>
+              <br> <!--Hier staan 3 streepjes met fixed position.-->
+              <br>  
+                <p style="font-size: 12px;">MENU</p>
+            </a>
+    
+        </nav>
+    </div>
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+<section>
+  <div class="main" style="position:relative; left: 55px">
+    <div id="textfade">
+        <h1 class="TextColor">English</h1>
+        <hr>
+
+        <h2 class="TextColor">PORTFOLIO</h2>
+        <p class="TextColor">Here are some projects I made for the subject English.</p>
+    </div>
+    <div class="row">
+        <div id="fade1" class="column"> <!--Escanor Story.-->
+            <div class="content Divborder">
+                <div class="row">
+                    <div class="columns">
+                        <div class="block glow" style="width: 215.5px; height: 100px;">
+                            <img src="Images/EscanorVSmeliodasEEN.png" style="width: 215px; height: 100px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        </div>
+                    </div>
+                </div>
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="Images/EscanorVSmeliodasEEN.png" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="Images/EscanorVSmeliodasTWEE.png" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="Images/EscanorVSmeliodasDRIEV2.png" style="width:100%">
+                        </div>
+                        <br>
+                        <div class="modal-content">
+                        
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+                        
+                        
+                            <div class="columns">
+                                <img class="demo cursor" src="Images/EscanorVSmeliodasEEN.png" style="width:100%" alt="Escanor's Match">
+                            </div>
+                            <div class="columns">
+                                <img class="demo cursor" src="Images/EscanorVSmeliodasTWEE.png" style="width:100%"  alt="Escanor's Match vol.2">
+                            </div>
+                            <div class="columns">
+                                <img class="demo cursor" src="Images/EscanorVSmeliodasDRIEV2.png" style="width:100%"  alt="Escanor's Match vol.3">
+                            </div>
+                        </div>
+                    </div>
+                <h3>Escanor's Match</h3>
+                <p>Here we had to write a story of a character and we had to use everything we've learned in the past weeks. I chose a already
+                    existing character but I made the story a lot different and added some other characters to the story but they are not really
+                    usefull characters.  
+                </p>
+            </div>
+        </div>
+
+        <div id="fade2" class="column" style="position: relative; z-index: -1;">
+            <div class="content Divborder">
+                <div class="gallery">
+                    <div class="block glow" style="z-index: 0; width: 215.5px; height: 122px; position: aboslute; left: -19px;">
+                        <a target="_self" href="Images/EnglishNegativeReviewSDS.png">
+                            <img src="Images/EnglishNegativeReviewSDS.png" alt="Negative Review" style=" width:215px; height:122.5px; position: relative; left: 0.2px;" class="hover-shadow cursor">
+                        </a>
+                    </div>
+                </div>
+                <h3>Review</h3>
+                <p>Here we had to review a game or a movie or a book, and give negative reasons why it was bad. Even if
+                you really like the movie/game you still had to write some negative things about it. And the last part
+                was to rate it 1-10.
+              </p>
+            </div>
+        </div>
+
+        <div id="fade3" class="column" style="position: relative; z-index: -1;">
+            <div class="content Divborder">
+                <div class="block glow" style="z-index: 0; width: 218px; height: 121px;">
+                    <iframe width="217" height="121" src="https://www.youtube.com/embed/bQJ5GOPETwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <h3>Introduction video</h3>
+            <p>Here we had to pretend we were setting up a youtube channel and this was the first video of us introducing ourselves
+                and what we wanted to be uploading in the future. I didn't have a really good microphone at the time.
+            </p>
+            </div>
+        </div>
+
+        <div id="fade4" class="column" style="position: relative; z-index: -1;">
+            <div class="content Divborder">
+                <div class="gallery">
+                    <div class="block glow" style="z-index: 0; width: 215.5px; height: 90px; position: relative; left: -19px;">
+                        <a target="_self" href="Images/EnglishPauloDybala.png">
+                            <img src="Images/EnglishPauloDybala.png" alt="VoetballerDybala" style="width: 215px; height: 90.5px; position: relative; left: 0.2px;" class="hover-shadow cursor">
+                        </a>
+                    </div>
+                </div>
+              <h3>Admire</h3>
+              <p>We had to write about we person who we looked up to or wanted to be and why.
+              </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fade5" class="content Divborder"  style="position: absolute; z-index: -1;">
+      <h2>English</h2>
+      <p>This subject is a lot like Nederlands/Dutch, but this time it's all about the English language. I really like the language myself
+          I don't really know why but whenever someoene speaks English as his/hers native language I just enjoy listening to it. But whenever
+          I try to speak it myself I rather don't wanna listen to it. Just because it's not like a real English person. But overall I also
+          really like it because i'm really good at it and everything we get to learn I already know so it's really easy for now. But 
+          I hope that will progress during the years!<p>
+    </div>
+  </div>
+</section>
+
+<div id="btn">
+    <div id='top'></div>
+    <div id='middle'></div>
+    <div id='bottom'></div>
+  </div>
+  <div id="box">
+    <div id="items">
+        <div class="item"><span><a href="Creativity.html">Creativity</a></span></div>
+        <div class="item"><span><a href="WebDesign.html">WebDesign</a></span></div>
+        <div class="item"><span><a href="Dutch.html">Dutch</a></span></div>
+        <div class="item"><span><a href="Personality.html">Personality</a></span></div>
+        <div class="item currentpage"><span><a href="English.html">English</a></span></div>
+        <div class="item"><span><a href="DigitalSkills.html">DigitalSkills</a></span></div>
+    </div>
+  </div>
+
+<script> //voor navbar MENU
+const sidebarBox = document.querySelector('#box'),
+        sidebarBtn = document.querySelector('#btn'),
+        pageWrapper = document.querySelector('#page-wrapper');
+
+sidebarBtn.addEventListener('click', event => {
+        sidebarBtn.classList.toggle('active');
+        sidebarBox.classList.toggle('active');
+});
+
+
+window.addEventListener('keydown', event => {
+
+        if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
+                sidebarBtn.classList.remove('active');
+                sidebarBox.classList.remove('active');
+        }
+});
+</script>
+  
+<script type="text/javascript">
+  let progress = document.getElementById('progressbar'
+      );
+  let totalHeight = document.body.scrollHeight - 
+      window.innerHeight;
+  window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / 
+          totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+   }
+
+function openModal() {
+document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 2;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+</script>
+
+<script> // Currentpage hightlight in navbar MENU 
+    var header = document.getElementById("items");
+    var btns = header.getElementsByClassName("item");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+  </script>
+</body>
+</html>

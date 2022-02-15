@@ -1,0 +1,134 @@
+.NameText{
+    font-size: 20px;
+}
+.NameTextFont{
+    text-align: center;
+}
+
+.NameTextBorder{
+    background-color: #000096;
+    height: 75px;
+    border-bottom: 5px solid #0000ff;
+}
+.NameTextPosition{
+    color: #ccffff; 
+    padding-top: 15px;
+}
+
+
+body{
+    background-image: url('Images/background');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    background-color: #000096;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #000096;
+}
+  
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color:#ccffff; ;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #0000ff;
+    color: white;
+}
+.topnav .current{
+    background-color:#0000ff;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+
+
+.SpecsMargin{
+    margin: 10px;
+}
+.SpecsFontSize{
+    font-size: 40px;
+}
+.SpecsFontColor{
+    color: white;
+}
+.SpecsTextcolor{
+    color: white;
+}
+
+/*tabel*/
+.TitleTable{
+    color: white;
+}
+table {
+    border-collapse: collapse;
+    font-family: arial, sans-serif;
+    width: 65%;
+}
+.TableSpecColor{
+    color: black;
+}
+td, th {
+    border: 3px solid #dddddd;
+    padding: 6px;
+    text-align: left;
+    width: 20%;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+tr:nth-child(odd){
+    background-color: rgb(163, 163, 163);
+}
+
+/*msi foto*/
+.MsiPictureSize{
+    float:right;
+    height:170px;
+    width:170x;
+}
+
+.collapsible{
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 9px;
+    width: 65%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+.active, .collapsible:hover{
+    background-color: #555;
+}
