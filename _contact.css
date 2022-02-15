@@ -1,0 +1,31 @@
+html{
+    height: 300%;
+    font-family: 'Numans', sans-serif;
+}
+body{
+    background-color: #145C9E;
+}
+h1{
+    position: inherit;
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: rgb(167, 157, 157);
+}
+.yes{
+    margin: 160px;
+    background-color: #0B4F6C;
+    height: 200px;
+    width: 300px;
+    border: #1F271B solid;
+    position: static;
+}
+.yes2{
+    margin: 100px;
+    background-color: #0B4F6C;
+    height: 400px;
+    width: 400px;
+    border: #1F271B solid;
+    position: static;
+}
