@@ -6,6 +6,18 @@ h1{
     font-family: "Montserrat", sans-serif;
 }
 p{
+    text-align: center;   
+}
+.image_placeholder{
+    background-color: #eee;
+    display: flex;
+    height: 180px;
+    margin: 5px;
+    width: 260px;
+}
+
+.image_placeholder > h4 {
+    align-self: center;
     text-align: center;
-    
+    width: 100%;
 }
