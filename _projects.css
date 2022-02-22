@@ -1,7 +1,65 @@
-body{
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
     background-color: #888;
+    overflow: auto;
 }
-h1{
+.main{
+    display: grid;
+    grid-column-gap: 2.3vw;
+    grid-row-gap: 7vw;
+    grid-template-columns: repeat(5,7vw);
+    grid-auto-rows: 7vw;
+    grid-template-areas: "g1 . g2 . g3 . g4";
+    justify-content: space-evenly;
+}
+.clip{
+    position: relative;
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transform: scale(2.5);
+    transition: 0.3s;
+}
+.hex1{
+    grid-area: g1;
+
+}.hex2{
+    grid-area: g2;
+
+}.hex3{
+    grid-area: g3;
+
+}.hex4{
+    grid-area: g4;
+
+}
+.clip:hover{
+    z-index: 1;
+    transform: scale(3.0);
+    box-shadow: 500px 500px 500px 500px #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* h1{
     text-align: center;
     font-family: "Montserrat", sans-serif;
 }
@@ -12,12 +70,12 @@ p{
     background-color: #eee;
     display: flex;
     height: 180px;
-    margin: 5px;
+    margin: 100px;
     width: 260px;
 }
 
 .image_placeholder > h4 {
-    align-self: center;
-    text-align: center;
+    align-items: center;
     width: 100%;
-}
+} */
+
