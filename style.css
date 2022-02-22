@@ -131,7 +131,6 @@ a{
   text-decoration: none;
 }
 
-
 content section {
   height: 100vh;
   display: flex;
@@ -165,7 +164,7 @@ nav ul li {
   line-height: 2;
   letter-spacing: 1pt;
   font-size: 2em;
-  color: #09203f;
+  color:  #888;
   animation: fadeDown 0.5s forwards;
   opacity: 0;
   cursor: pointer;
@@ -173,7 +172,8 @@ nav ul li {
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 nav ul li:hover {
-  text-shadow: 2px 1px 40px rgb(0, 0, 0);
+  color: #484848;
+  text-shadow: 1px 1px 2px #484848, 0 0 1em #888, 0 0 0.2em #888;
   opacity: 0.8;
 }
 nav ul li:nth-child(1) {
