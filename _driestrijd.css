@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(136, 136, 136, 0.842);
+}
+
+.textdiv{
+    font-size: 15px;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+  width: 68.13%;
+  padding: 0px;
+}
+.framediv{
+    margin: auto;
+  width: 68.13%;
+  padding: 0px;
+}
+.frame{
+    
+    height: 768px;
+    width:1024px;
+}
