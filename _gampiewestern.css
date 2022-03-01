@@ -1,0 +1,33 @@
+body{
+    background-color: #888;
+    text-align: center;
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.discText{
+    background-color: #dcdcdc;
+    position: relative;
+    left: 20.5%;
+    border: 5px solid #5e5e5e;
+    box-shadow: 1px 2px 2px 1px #484848;
+    width: 443px;
+}
+.btn{
+
+    position: relative;
+    top: -5px;
+    left: 10px;
+    border: 2px solid #888;
+    border-radius: 10%;
+}
+.btn:hover{
+    box-shadow: 1px 2px 2px 2px #484848;
+    cursor: pointer;
+}
+.slideText{
+    position: relative;
+    left: 7px;
+    font-size: 12px;
+}
