@@ -6,8 +6,12 @@ body{
   padding: 10px;
   font-family: "Montserrat", sans-serif;
 }
+iframe{
+    border: 2px solid #5e5e5e;
+    box-shadow: 1px 2px 2px 1px #484848;
+}
 .discText{
-    background-color: #dcdcdc;
+    background-image: linear-gradient(#dcdcdc, #48484838);
     position: relative;
     left: 20.5%;
     border: 5px solid #5e5e5e;
@@ -15,7 +19,6 @@ body{
     width: 443px;
 }
 .btn{
-
     position: relative;
     top: -5px;
     left: 10px;
@@ -23,8 +26,15 @@ body{
     border-radius: 10%;
 }
 .btn:hover{
-    box-shadow: 1px 2px 2px 2px #484848;
+    box-shadow: 1px 2px 5px 2px #484848;
     cursor: pointer;
+    -webkit-transition: all .7s;
+    transition: all .6s;
+}
+.btn:not(:hover){
+    transform: scale(0.9);
+    -webkit-transition: all .1s;
+    transition: all .1s;
 }
 .slideText{
     position: relative;
