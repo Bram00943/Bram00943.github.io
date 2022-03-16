@@ -6,7 +6,21 @@
 }
 body {
   min-height: 100vh;
-  background-color: rgba(136, 136, 136, 0.842);
+  background-color: #484848;
+}
+.bg{
+
+  opacity: 0.022;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 1533px;
+  height: 752.5px;
+  background-image: url("Images/elon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1533px 752.5px;
+  z-index: -1;
 }
 header {
   position: fixed;
