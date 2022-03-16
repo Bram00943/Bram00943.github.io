@@ -1,6 +1,6 @@
 
 body{
-    background: #484848;
+    background-image: linear-gradient(#484848, #dcdcdc);
     font-family: "Montserrat", sans-serif;
 }
 .headertext{
