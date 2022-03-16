@@ -1,0 +1,347 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html {
+  font-family: "Montserrat", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #484848;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #dcdcdc;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #dcdcdc;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #dcdcdc;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #dcdcdc;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #dcdcdc;
+	color: #dcdcdc;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #dcdcdc;
+}
+
+:-moz-placeholder { 
+	color: #dcdcdc;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #dcdcdc;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #dcdcdc;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #dcdcdc;
+  color: #dcdcdc;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #dcdcdc;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+
+
+
+
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+.deck {
+  position:absolute;
+  width: 10em;
+  height: 13em;
+  top: 700px;
+  right: 400px;
+  margin: -6.5em 0 0 -5em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.deck__item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: .3em;
+  border: 0.1em solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3), inset 0 6em 6em rgba(255, 255, 255, 0.1);
+  transform-origin: 90% 92%;
+  transition: .3s;
+}
+.deck__item:hover ~ .deck__item {
+  transform: rotate(120deg);
+}
+
+.deck__item:last-of-type:after {
+  content: "";
+  position: absolute;
+  left: 90%;
+  top: 92%;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  background: #dcdcdc;
+  margin: -.6em 0 0 -.6em;
+  box-shadow: inset 0 1px 1px white, inset 0 -0.3em 0.2em #dddcdb, 0 0 0.6em rgba(0, 0, 0, 0.2);
+}
+
+.deck__item:last-of-type:before {
+  content: "";
+  position: absolute;
+  right: .4em;
+  bottom: .9em;
+  width: 1.1em;
+  height: .15em;
+  background: silver;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.deck__link {
+  text-decoration: none;
+  display: block;
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.deck__icon {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 4em;
+  color: black;
+  color: rgba(0, 0, 0, 0.6);
+  display: block;
+  margin: .5em auto;
+}
+
+.deck__item--tiktok {
+  background: #000000;
+  transform: rotate(-20deg);
+}.fa-tiktok{
+  color: white;
+  filter: drop-shadow(3px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+}
+
+.deck__item--stack-overflow {
+  background: #bcbbbb;
+  transform: rotate(-10deg);
+}
+.fa-stack-overflow{
+  color: #ef8236;
+}
+
+.deck__item--github {
+  background: #171515;
+  transform: rotate(0deg);
+}
+.fa-github{
+  color: white;
+}
+.deck__item--linkedin {
+  background: #0E76A8;
+  transform: rotate(10deg);
+}
+.fa-linkedin{
+  color: white;
+}
+.deck__item--pinterest {
+  background: #aa161d;
+  transform: rotate(20deg);
+}
+.fa-pinterest{
+  color: white;
+}
+.deck__item--instagram {
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  transform: rotate(30deg);
+}
+.fa-instagram{
+  color: white;
+}
