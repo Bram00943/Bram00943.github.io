@@ -78,11 +78,13 @@ section > h1 {
 }
 
 .masthead {
+  background-position: center center;
   padding: 6em 0;
   background-image: url('Images/Mebanner.png');
   background-size: cover;
   background-repeat: no-repeat;
   border-top: solid 1em #222222;
+  
 }
 
 .masthead-intro {
