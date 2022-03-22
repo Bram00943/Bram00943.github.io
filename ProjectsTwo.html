@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
     <!----
     <link href="https://bram00943.github.io/project.css">
@@ -96,35 +97,39 @@
 <div id="drag-container">
     <div id="spin-container">
       <!-- Add your images (or video) here --> 
-        <a href="AboutMe.html">
-            <img src="Images/WesternGampie.PNG" alt="">
-        </a>
+      <a href="index.html" title="Go To index">
+        <img src="images/index.PNG" alt="">
+      </a>
+     
+        
+        <img src="Images/WesternGampie.PNG" alt="">
+        <img src="images/AlmightyCooper2.PNG" alt="">
+        <img src="images/Platformer.PNG" alt="">
+        <img src="images/ShineIndex.PNG" alt="">
+        <img src="images/First_Website.PNG" alt="">
+        <img src="images/WeatherApp.PNG" alt="">
+        <img src="images/Driestrijd.PNG" alt="">
+        <!-- Example add video  -->
 
-   
-    <img src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-    <img src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-    <img src="https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-    <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-    <img src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-    <img src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-    <img src="https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-    
-      <!-- Example add video  -->
-    <video controls autoplay="autoplay" loop> 
-        <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
-    </video>
+        <!-- <video controls autoplay="autoplay" loop> 
+            <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+        </video> -->
       <!-- Text at center of ground -->
-      <p>Projects</p>
+      <p>Projects
+      </p>
     </div>
-    <div id="ground"></div>
+        <div id="ground"></div>
   </div>
     <script>
+    
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
     // You can change global variables here:
-    var radius = 220; // how big of the radius
+    var radius = 260; // how big of the radius
     var autoRotate = true; // auto rotate or not
-    var rotateSpeed = -120; // unit: seconds/360 degrees
-    var imgWidth = 120; // width of images (unit: px)
-    var imgHeight = 170; // height of images (unit: px)
+    var rotateSpeed = -200; // unit: seconds/360 degrees
+    var imgWidth = 140; // width of images (unit: px)
+    var imgHeight = 190; // height of images (unit: px)
 
 
     // ===================== start =======================

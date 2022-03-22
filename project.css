@@ -129,7 +129,6 @@ body{
   } */
 
   * {
-    margin: 0;
     padding: 0;
   }
   
@@ -142,30 +141,21 @@ body{
   
   body {
     overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     background: #484848;
-    -webkit-perspective: 1000px;
             perspective: 1000px;
-    -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
   
   #drag-container, #spin-container {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: auto;
-    -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
-    -webkit-transform: rotateX(-10deg);
             transform: rotateX(-10deg);
   }
-  
+
   #drag-container img, #drag-container video {
-    -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     position: absolute;
     left: 0;
@@ -175,7 +165,6 @@ body{
     line-height: 200px;
     font-size: 50px;
     text-align: center;
-    -webkit-box-shadow: 0 0 8px #fff;
             box-shadow: 0 0 8px #888;
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
   }
@@ -207,13 +196,6 @@ body{
             transform: translate(-50%,-50%) rotateX(90deg);
     background: -webkit-radial-gradient(center center, farthest-side , rgba(167, 167, 167, 0.2), transparent);
   }
-  
-  #music-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
 @-webkit-keyframes spin {
   from{
     -webkit-transform: rotateY(0deg);
@@ -250,4 +232,29 @@ body{
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
