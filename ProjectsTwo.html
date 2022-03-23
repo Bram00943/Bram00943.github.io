@@ -97,24 +97,16 @@
 <div id="drag-container">
     <div id="spin-container">
       <!-- Add your images (or video) here --> 
-      <a href="index.html" title="Go To index">
-        <img src="images/index.PNG" alt="">
-      </a>
-     
-        
-        <img src="Images/WesternGampie.PNG" alt="">
-        <img src="images/AlmightyCooper2.PNG" alt="">
-        <img src="images/Platformer.PNG" alt="">
-        <img src="images/ShineIndex.PNG" alt="">
-        <img src="images/First_Website.PNG" alt="">
-        <img src="images/WeatherApp.PNG" alt="">
-        <img src="images/Driestrijd.PNG" alt="">
-        <!-- Example add video  -->
 
-        <!-- <video controls autoplay="autoplay" loop> 
-            <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
-        </video> -->
-      <!-- Text at center of ground -->
+
+        <img onclick="location.href = 'index.html';" src="images/index.PNG" alt="IndexPngMissing" >
+        <img onclick="location.href = 'GampieWestern.html';" src="Images/WesternGampie.PNG" alt="WesternGampPngMissing">
+        <img onclick="location.href = 'AlmightyCooper.html';" src="images/AlmightyCooper2.PNG" alt="AlmightyCooperPngMissing">
+        <img onclick="location.href = 'Platformer.html';" src="images/Platformer.PNG" alt="PlatformerPngMissing">
+        <img onclick="location.href = 'Shine/Index.html';" src="images/ShineIndex.PNG" alt="ShinePngMissing">
+        <img onclick="location.href = 'Website/Index2.html';" src="images/First_Website.PNG" alt="1stWebsitePngMissing">
+        <img onclick="location.href = 'Weatherapp.html';" src="images/WeatherApp.PNG" alt="ShinePngMissing">
+        <img onclick="location.href = 'Driestrijd.html';"   src="images/Driestrijd.PNG" alt="StoryPngMissing">
       <p>Projects
       </p>
     </div>
@@ -140,12 +132,13 @@
     var ospin = document.getElementById('spin-container');
     var aImg = ospin.getElementsByTagName('img');
     var aVid = ospin.getElementsByTagName('video');
+
     var aEle = [...aImg, ...aVid]; // combine 2 arrays
 
     // Size of images
     ospin.style.width = imgWidth + "px";
     ospin.style.height = imgHeight + "px";
-
+    
     // Size of ground - depend on radius
     var ground = document.getElementById('ground');
     ground.style.width = radius * 3 + "px";
