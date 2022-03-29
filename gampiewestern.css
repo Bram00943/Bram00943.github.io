@@ -83,10 +83,8 @@ details p{
 .img-bg {
   z-index: 1;
   background: url("Images/WesternGampie.PNG");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
+  background-position: center center;
   background-size: cover;
-  -o-background-size: cover;
   min-height: 400px;
 }
 .img-bg:hover{

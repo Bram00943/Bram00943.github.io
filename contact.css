@@ -473,7 +473,7 @@ ul.social-icons {
     margin-top: 60px;
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
-    background: linear-gradient(180deg, #888 0%,#484848 100%);
+    background:#5e5d5d;
 }
 .sidebarMenuInner{
     margin:0;
