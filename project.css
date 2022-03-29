@@ -181,14 +181,24 @@ body{
     font-family: "Montserrat", sans-serif;
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 70px;
+    pointer-events: none;
     -webkit-transform: translate(-50%,-50%) rotateX(90deg);
             transform: translate(-50%,-50%) rotateX(90deg);
     font-size: 20px;
     color: #fff;
-    pointer-events: none;
+
   }
-  
+  #drag-container #pStyle{
+    width: 200px;
+    font-family: Montserrat, sans-serif; 
+    position: absolute; 
+    top: 100%;
+    left: 400px;
+    pointer-events: none; 
+    transform: rotateY(180deg); 
+    transform: rotateX(1deg)
+  }
   #ground {
     width: 900px;
     height: 900px;

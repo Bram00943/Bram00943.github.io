@@ -8,10 +8,30 @@
     <script src="https://kit.fontawesome.com/04559008fd.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
     <link rel="Stylesheet" href="contact.css">
-
     <title>Conctact</title>
 </head>
-<body><div id="container">
+<body>
+
+  <div class="header"></div>
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
+                    <div class="hoverLi">
+                        <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="AboutMe.html" target="_blank">About Me</a></li>
+                        <li><a href="ProjectsTwo.html" target="_blank">Projects</a></li>
+                        <li><a href="Contact.html" target="_blank">Contact</a></li>
+                    </div>
+                </ul>
+            </div>
+
+  <div id="container">
     <h1>&bull; Let's keep in Touch &bull;</h1>
     <div class="underline">
     </div>
@@ -34,14 +54,14 @@
         <label for="subject"></label>
         <select placeholder="Subject line" name="subject" id="subject_input" required>
           <option disabled hidden selected>Subject line</option>
-          <option>I'd like to start a project</option>
-          <option>I'd like to ask a question</option>
-          <option>I'd like to make a proposal</option>
+          <option style="color: #484848;">I'd like to start a project</option>
+          <option style="color: #484848;">I'd like to ask a question</option>
+          <option style="color: #484848;">I'd like to make a proposal</option>
         </select>
       </div>
       <div class="message">
         <label for="message"></label>
-        <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+        <textarea name="message" placeholder="Write" id="message_input" cols="30" rows="5" required></textarea>
       </div>
       <div class="submit">
         <input type="submit" value="Send Message" id="form_button" />
@@ -49,44 +69,16 @@
     </form>
   </div>
 
-  <ul class="deck">
-    <li class="deck__item deck__item--tiktok">
-      <a class="deck__link" href="https://www.tiktok.com/@yung_kroisand">
-        <span class="deck__icon fa-brand fa-tiktok"></span>
-        <span class="deck__label">Tiktok</span>
-      </a>
-    </li>
-    <li class="deck__item deck__item--stack-overflow">
-      <a class="deck__link" href="https://stackoverflow.com/users/15190653/bram0943">
-        <span class="deck__icon fa-brand fa-stack-overflow"></span>
-        <span class="deck__label">Stack Overflow</span>
-      </a>
-    </li>
-    <li class="deck__item deck__item--github">
-      <a class="deck__link" href="https://github.com/Bram00943">
-        <span class="deck__icon fa-brand fa-github"></span>
-        <span class="deck__label">GitHub</span>
-      </a>
-    </li>
-    <li class="deck__item deck__item--linkedin">
-      <a class="deck__link" href="#">
-        <span class="deck__icon fa-brand fa-linkedin"></span>
-        <span class="deck__label">LinkedIn</span>
-      </a>
-    </li>
-    <li class="deck__item deck__item--pinterest">
-      <a class="deck__link" href="#"></a>
-        <span class="deck__icon fa-brand fa-pinterest"></span>
-        <span class="deck__label">Pinterest</span>
-      </a>
-    </li>
-    <li class="deck__item deck__item--instagram">
-      <a class="deck__link" href="https://www.instagram.com/bram._n/">
-        <span class="deck__icon fa-brand fa-instagram"></span>
-        <span class="deck__label">Instagram</span>
-      </a>
-    </li>
-  </ul>
-  
+  <div class="footer-social-icons">
+    <h4 class="_14">Follow me on</h4>
+    <ul class="social-icons">
+        <li><a href="https://www.instagram.com/bram._n/" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://stackoverflow.com/users/15190653/bram0943" class="social-icon"> <i class="fa fa-stack-overflow"></i></a></li>
+        <li><a href="https://github.com/Bram00943" class="social-icon"> <i class="fa fa-github"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-pinterest"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.tiktok.com/@yung_kroisand" class="social-icon"> <i class="fab fa-tiktok"></i></a></li>
+    </ul>
+</div>
 </body>
 </html>

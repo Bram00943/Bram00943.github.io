@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="GampieWestern.js"></script>
-    <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
-    <link rel="stylesheet" href="gampiewestern.css">
-    <title>Gampie Western</title>
-</head>
-<!-- <body>
-    <div>
-        <h1>Gampie Western</h1>
-        <p>Here is a arcade style game I made</p>
-    </div>
-    <br>
-    <div>
-        <iframe width="450" height="300" src="https://www.youtube.com/embed/4vJH1_H6X9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-    </div>
-    <br>
-    <div class="discText">
-        <p id="text">This was a project were I made a game what was made for a old arcade game
-            console. I coded the whole game myself.
-        </p>
-        <p class="slideText" id="slide">
-
-        </p>
-        <button id="btn1" class="btn" onclick="onClick()">Next</button>
-    </div> -->
-
-    <body>    
-
-        <div class="container-fluid">
-            <a href="https://www.youtube.com/watch?v=4vJH1_H6X9A&t=1s" title="Watch Gampie Western">
-                <header class="img-bg">
-                    <div class="img-bg-background">
-                        <p>Click On Banner</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
+        <link rel="stylesheet" href="gampiewestern.css">
+        <title>Gampie Western</title>
+    </head>
+    <body>          
+        <div class="header"></div>
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
+                    <div class="hoverLi">
+                        <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="AboutMe.html" target="_blank">About Me</a></li>
+                        <li><a href="ProjectsTwo.html" target="_blank">Projects</a></li>
+                        <li><a href="Contact.html" target="_blank">Contact</a></li>
                     </div>
-                    <div class="row">
-                      <div class="col-md-4 col-md-push-7">
-                      </div>
-                    </div>
-                  </header> 
-            </a>
-       </div>
-     
-       <br>
-       <br>
- 
-       <section>
-           <details>
-               <summary>
-                   About Gampie Western
-               </summary>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem neque aspernatur beatae maxime ut sapiente ad, recusandae voluptas, facilis corrupti saepe molestiae unde sed tenetur expedita minus nisi amet nobis!</p>
-           </details>
-           <details>
-            <summary>
-                My contribution
-            </summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem neque aspernatur beatae maxime ut sapiente ad, recusandae voluptas, facilis corrupti saepe molestiae unde sed tenetur expedita minus nisi amet nobis!</p>
-        </details>
-        <details>
-            <summary>
-                Conclusion
-            </summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem neque aspernatur beatae maxime ut sapiente ad, recusandae voluptas, facilis corrupti saepe molestiae unde sed tenetur expedita minus nisi amet nobis!</p>
-        </details>
-       </section>
-</body>
+                </ul>
+            </div>
+        <div id='center' class="main center">
+            </div>
+                <div class="container-fluid">
+                    <a href="https://www.youtube.com/watch?v=4vJH1_H6X9A&t=1s" title="Watch Gampie Western">
+                        <header class="img-bg">
+                            <div class="img-bg-background">
+                                <p>Click On Banner</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-push-7"></div>
+                            </div>
+                        </header> 
+                    </a>
+                </div>  
+                <br>
+                
+                <br>
+                <section>
+                    <details>
+                        <summary>
+                            About Gampie Western
+                        </summary>
+                        <p>
+                            I came up with an idea that had as inspiration the old arcade game "pong" but then
+                            western style which cowboys shooting a bullet and deflecting them. Others came with
+                            the idea to use ping pong bats to reflect them, I personally thought that was a little
+                            bit odd, because realistically you can never deflect a bullet with a ball. But it's a 
+                            game after all so I agreed, but to add a little bit of spice I came up the idea to add some
+                            abilities/power-ups that should spawn random across the map and whenever the bullet
+                            collides with the power-up you get the power-up. Further more the name Gampie is from a 
+                            small company that develops games, it has two 'owners' and I am one of them, so I gave this
+                            the name Gampie Western.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            My contribution
+                        </summary>
+                        <p>
+                            Well I ofcourse contributed a lot because I created this on my own. Though I've gotten
+                            a bit of help from others because when I first made it, I was quiet new to C#. So I had
+                            to figure a lot of things out myself. But the art I've been sent was to be honest pretty
+                            nice aswell, yet I wasn't able to put all of the art/animations in the game because there
+                            were still a few bugs left to fix which were also sort of 'hard' to fix. For example the 
+                            ability SixShooter was by far the hardest ability to code and also have to work it properly.
+                            Since it was such a hard ability to code, with my knowledge, I had to ask a certain person
+                            who is specialized in C# and Unity. And together we were able to make the ability just the
+                            way it was supposed to work.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            Conclusion
+                        </summary>
+                        <p>
+                            Well, my conclusion is that I find it very entertaining to create games with or without people
+                            obviously with other developers is more fun but doing it alone (for me) work better because
+                            then you cannot ask for help for every problem you run into. So you have to come up with idea's
+                            yourself to fix it, and by doing that you learn more then when you ask for help everytime. But I'm
+                            still proud of the game and it works pretty much as I had in mind, it was very amazing to see the
+                            game in the end because everything worked fine, without any errors.
+                        </p>
+                    </details>
+                </section>
+            <footer class="content-footer">
+                <p>@2022</p>
+            </footer>
+    </body>
 </html>
