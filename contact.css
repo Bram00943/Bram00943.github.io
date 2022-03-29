@@ -32,6 +32,7 @@ textarea {
 }
 
 #container {
+  min-height: 800px;
   border: solid 3px #dcdcdc;
   max-width: 768px;
   margin: 60px auto;
@@ -42,7 +43,24 @@ form {
   padding: 37.5px;
   margin: 50px 0;
 }
+#status{
+  font-size: 25px;
+  text-align: center;
+  color: #dcdcdc;
+  text-align: center;
+  width: 30%;
+  max-width: 500px;
+  padding:  5px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.succes{
 
+  background-color: rgba(172, 255, 47, 0.295);
+}
+#status.error{
+  background-color: rgba(255, 0, 0, 0.281);
+}
 h1 {
   color: #dcdcdc;
   font-size: 32px;
@@ -72,8 +90,21 @@ h1 {
 }
 
 .email {
-	float: right;
+	float: left;
 	width: 45%;
+}
+
+.submit{
+  float:left;
+  position: absolute;
+  left: 35px;
+  bottom: 50px;  
+}
+.reset{
+  float:right;
+  position: absolute;
+  right: 35px;
+  bottom: 50px;  
 }
 
 input[type='text'], [type='email'], select, textarea {
@@ -111,6 +142,10 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 
 .name {
 	float: left;
+	width: 45%;
+}
+.lastname{
+  float: right;
 	width: 45%;
 }
 select {

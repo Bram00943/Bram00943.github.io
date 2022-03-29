@@ -11,25 +11,24 @@
     <title>Conctact</title>
 </head>
 <body>
-
   <div class="header"></div>
-            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-            <label for="openSidebarMenu" class="sidebarIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
-            </label>
-            <div id="sidebarMenu">
-                <ul class="sidebarMenuInner">
-                    <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
-                    <div class="hoverLi">
-                        <li><a href="index.html" target="_blank">Home</a></li>
-                        <li><a href="AboutMe.html" target="_blank">About Me</a></li>
-                        <li><a href="ProjectsTwo.html" target="_blank">Projects</a></li>
-                        <li><a href="Contact.html" target="_blank">Contact</a></li>
-                    </div>
-                </ul>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
+            <div class="hoverLi">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="AboutMe.html" target="_blank">About Me</a></li>
+                <li><a href="ProjectsTwo.html" target="_blank">Projects</a></li>
+                <li><a href="Contact.html" target="_blank">Contact</a></li>
             </div>
+        </ul>
+    </div>
 
   <div id="container">
     <h1>&bull; Let's keep in Touch &bull;</h1>
@@ -41,32 +40,35 @@
         <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
       </svg>
     </div>
-    <form action="#" method="post" id="contact_form">
+    <form action="https://formspree.io/f/xyyodjqd" method="POST">
       <div class="name">
         <label for="name"></label>
-        <input type="text" placeholder="My name is" name="name" id="name_input" required>
+        <input type="text" placeholder="Name" name="First name" id="my-form" required>
       </div>
+
+      <div class="lastname">
+        <label for="lastname"></label>
+        <input type="text" placeholder="Last name" name="Last name" required>
+      </div>
+
       <div class="email">
         <label for="email"></label>
-        <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+        <input type="email" placeholder="My e-mail is" name="email" required>
       </div>
-      <div class="subject">
-        <label for="subject"></label>
-        <select placeholder="Subject line" name="subject" id="subject_input" required>
-          <option disabled hidden selected>Subject line</option>
-          <option style="color: #484848;">I'd like to start a project</option>
-          <option style="color: #484848;">I'd like to ask a question</option>
-          <option style="color: #484848;">I'd like to make a proposal</option>
-        </select>
-      </div>
+
       <div class="message">
         <label for="message"></label>
-        <textarea name="message" placeholder="Write" id="message_input" cols="30" rows="5" required></textarea>
+        <textarea name="message" placeholder="Your message" id="message_input" cols="30" rows="5" required></textarea>
       </div>
+
       <div class="submit">
         <input type="submit" value="Send Message" id="form_button" />
+      </div>  
+      <div class="reset">
+        <input type="reset" value="reset" id="form_button" />
       </div>
     </form>
+    <div id="status"></div>
   </div>
 
   <div class="footer-social-icons">
