@@ -410,8 +410,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   height: 0px;
 }
 
-
-
 .dropdown{
   position: relative;
   display: inline-block;
