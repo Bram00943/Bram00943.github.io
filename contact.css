@@ -32,6 +32,7 @@ textarea {
 }
 
 #container {
+  top: 40px;
   min-height: 800px;
   border: solid 3px #dcdcdc;
   max-width: 768px;
@@ -55,7 +56,6 @@ form {
   border-radius: 8px;
 }
 #status.succes{
-
   background-color: rgba(172, 255, 47, 0.295);
 }
 #status.error{
@@ -339,6 +339,7 @@ ul {
     list-style: none;
 }
 .footer-social-icons {
+  padding: 20px;
   text-align: center;
   width: 350px;
   display:block;
@@ -615,4 +616,24 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 #center{
   height: 0px;
+}
+
+
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #888;
+  min-width: 218px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: all 0.1s;
 }

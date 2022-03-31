@@ -22,10 +22,21 @@
         <ul class="sidebarMenuInner">
             <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
             <div class="hoverLi">
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="AboutMe.html" target="_blank">About Me</a></li>
-                <li><a href="ProjectsTwo.html" target="_blank">Projects</a></li>
-                <li><a href="Contact.html" target="_blank">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <div class="dropdown">
+                  <li style="color: #dcdcdc; pointer-events: none;">Projects</a></li>
+                  <div class="dropdown-content">
+                      <li style="font-size: 15px;"><a href="GampieWestern.html">Gampie Western</a></li>
+                      <li style="font-size: 15px;"><a href="AlmightyCooper.html">Almighty Cooper</a></li>
+                      <li style="font-size: 15px;"><a href="Platformer.html">Platformer</a></li>
+                      <li style="font-size: 15px;"><a href="Shine/Index.html">Shine website</a></li>
+                      <li style="font-size: 15px;"><a href="Website/Index2.html">First website</a></li>
+                      <li style="font-size: 15px;"><a href="Weatherapp.html">Weather App</a></li>
+                      <li style="font-size: 15px;"><a href="Driestrijd.html">Drie Strijd</a></li>
+                  </div>
+              </div>
+                <li><a href="Contact.html">Contact</a></li>
             </div>
         </ul>
     </div>
@@ -40,10 +51,11 @@
         <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
       </svg>
     </div>
-    <form action="https://formspree.io/f/xyyodjqd" method="POST">
+    <form action="https://formspree.io/f/xyyodjqd" method="POST" id="my-form">
+
       <div class="name">
-        <label for="name"></label>
-        <input type="text" placeholder="Name" name="First name" id="my-form" required>
+        <label for="firstname"></label>
+        <input type="text" placeholder="Name" name="First name" required>
       </div>
 
       <div class="lastname">
@@ -81,6 +93,6 @@
         <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
         <li><a href="https://www.tiktok.com/@yung_kroisand" class="social-icon"> <i class="fab fa-tiktok"></i></a></li>
     </ul>
-</div>
+  </div>
 </body>
 </html>
