@@ -381,3 +381,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   display: block;
   transition: all 0.1s;
 }
+
+.pText{
+  color: red;
+}

@@ -1,21 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
-    <link rel="stylesheet" href="weatherapp.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Almighty Cooper
-    </h1>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ifQiy4m6vwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div>
-        <p>A game I programmed which is based on a base game.</p>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
+        <link rel="stylesheet" href="weatherapp.css">
+        <title>Weatherapp</title>
+    </head>
+    <body>          
+        <div class="header"></div>
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
+                    <div class="hoverLi">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AboutMe.html">About Me</a></li>
+                        <div class="dropdown">
+                            <li style="color: #dcdcdc; pointer-events: none;">Projects</a></li>
+                            <div class="dropdown-content">
+                                <li style="font-size: 15px;"><a href="GampieWestern.html">Gampie Western</a></li>
+                                <li style="font-size: 15px;"><a href="AlmightyCooper.html">Almighty Cooper</a></li>
+                                <li style="font-size: 15px;"><a href="Platformer.html">Platformer</a></li>
+                                <li style="font-size: 15px;"><a href="Shine/Index.html">Shine website</a></li>
+                                <li style="font-size: 15px;"><a href="Website/Index2.html">First website</a></li>
+                            </div>
+                        </div>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </div>
+                </ul>
+            </div>
+        <div id='center' class="main center">
+            </div>
+                <div class="container-fluid">
+                    <a href="https://youtu.be/ifQiy4m6vwE" title="Watch WeatherApp">
+                        <header class="img-bg">
+                            <div class="img-bg-background">
+                                <p>Click On Banner</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-push-7"></div>
+                            </div>
+                        </header> 
+                    </a>
+                </div>  
+                <br>
+                
+                <br>
+                <section>
+                    <details>
+                        <summary>
+                            About Weatherapp
+                        </summary>
+                        <p>
+                            This was a very quick application where I've used a Excel file and Unity. You
+                            can give in the Excel file various value's and then the icons in Unity change
+                            depending on the value's you gave in the Excel file. So in Antartica it's
+                            obviously very cold so the snowflake icon is bigger then in other country, but 
+                            in NY it's not that cold so the snowflake is a little smaller.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            My contribution
+                        </summary>
+                        <p>
+                            I wouldn't say I'm not proud of this project, but I admit that I have made 
+                            better projects. Only because this one was just a quick project that I made
+                            to look if you can work with an excel file and adjust values from within the
+                            Excel file and change things inside of Unity.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            Conclusion
+                        </summary>
+                        <p>
+                           In short I am now aware then I cannot make just small projects because 
+                           then they will be boring to 'play' or execute. So whenever I want to
+                           create a new project I need just some time to develop the project and 
+                           think of interesting things I can add to make it more ejoyable to play
+                           or execute.
+                        </p>
+                    </details>
+                </section>
+            <footer class="content-footer">
+                <p>@2022</p>
+            </footer>
+    </body>
 </html>

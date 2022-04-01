@@ -1,9 +1,432 @@
-body{
+html,
+.root{
+    padding: 9px;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    height: 1000px;
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    background-color: #484848;
+    color: #dcdcdc;
+    font-family: "Montserrat", sans-serif;
+  }
+  section{
+      padding-top: 4rem;
+      width: 50%;
+      margin: auto; 
+  }
+  h1{
+      font-size: 2rem;
+      font-weight: 500;
+  }
+  details[open] summary ~ *{
+    animation: open 0.3s ease-in-out;
+  }
+@keyframes open
+{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+details summary::-webkit-details-marker{
+    display: none
+}
+details summary{
+width: 100%;
+padding: 0.5rem 0;
+border-top: 1px solid #dcdcdc;
+position: relative;
+cursor: pointer;
+font-size: 1.5rem;
+font-weight: lighter;
+list-style: none;
+
+}
+details summary::after{
+    content: "+";
+    color: #dcdcdc;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right:0;
+    font-weight: 500;
+    transform-origin: center;
+    transition: 200ms linear;
+}
+details[open] summary::after{
+    transform: rotate(45deg);
+    font-size: 2rem;
+
+}
+details summary{
+    outline: 0;
+}
+details p{
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+    padding-top: 1rem;
+}
+
+/* pictureholder */
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Ranga");
+
+.img-bg {
+  z-index: 1;
+  background: url("Images/WeatherApp.PNG");
+  background-position: center center;
+  background-size: cover;
+  min-height: 400px;
+}
+.img-bg:hover{
+    box-shadow: 2px 1px 2px 2px #dcdcdc7c;
+    transition: all 0.5s;
+}
+.img-bg:not(:hover){
+    box-shadow: 0px 0px 0px 0px #dcdcdc7c;
+    transition: all 0.5s;
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: orange;
+  font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.about {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+}
+h2 {
+  padding-bottom: 30px;
+  text-decoration: underline;
+}
+.separator {
+  background-color: orange;
+  height: 25px;
+}
+h3 {
+  font-size: 1.4em !important;
+}
+.timeline {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+  max-width: 650px;
+}
+.panel-group .panel-heading {
+  border-bottom: solid;
+  border-bottom-color: orange;
+}
+.panel,
+.panel-heading {
+  background-color: black;
+  border-color: orange;
+}
+.panel-heading {
+  color: orange;
+}
+ul {
+  text-align: left;
+  list-style: none;
+}
+.thinner {
+  font-size: 0.7em;
+}
+.foot-separator {
+  background-color: orange;
+  height: 3px;
+}
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+}
+a {
+  text-decoration: none !important;
+}
+a:link {
+  color: orange;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+}
+.img-bg-background{
+  top: 200px;
+  
+}
+.img-bg-background:hover{
+    background-color: rgb(163, 163, 163);
+    transition: 1s;
+}
+.img-bg-background:not(:hover){
+    transition: 1s;
+}
+.img-bg-background p{
+  color:white;
+  opacity: 0.3;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 375px;
+}
+.content-footer {
+  margin: 217px 0;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #888;
+  text-decoration: none;
+}
+.content-footer > p {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #F7EDE1;
+  text-align: center;
+  color: #dcdcdc;
+  text-shadow: 3px 2px #222222;
+}
+@media only screen and (max-width: 500px) {
+  .content-footer {
+      padding: 2em 2.5em;
+  }
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  border-color: blue;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(199, 193, 193);
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #969696;
+  border-radius: 5px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #757575;
+}
+::-webkit-scrollbar-thumb:active { 
+  background-color: rgb(59, 58, 58);
+}  
+::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #000000 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #524d4d transparent;
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #000000 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #524d4d transparent transparent transparent;
+}
+
+
+/* navbar */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+.header {
+  top: 0;
+  left: 0;
+    display: block;
+    margin: 0 auto;
+    margin-left: 0px;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: rgb(104, 104, 104);
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
     text-align: center;
-    margin: auto;
-  width: 50%;
-  padding: 10px;
-  padding-left: auto;
-  background-color: #888585;
-  font-family: "Montserrat", sans-serif;;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+  z-index: 99;
+  top: 0px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background:#5e5d5d;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #202020;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #dcdcdc;
+}
+.sidebarMenuInner li span{
+
+    display: block;
+    font-size: 14px;
+    color: #484848;
+}
+.sidebarMenuInner #topLi{
+  pointer-events: none;
+}
+.sidebarMenuInner li a{
+    color: #dcdcdc;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sidebarMenuInner li a:hover{
+  color: #484848;
+  transition: all 1s;
+}
+.sidebarMenuInner li a:not(:hover){
+  color: #dcdcdc;
+  transition: all 1s;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #dcdcdc;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+#center{
+  height: 0px;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #888;
+  min-width: 218px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: all 0.1s;
 }
