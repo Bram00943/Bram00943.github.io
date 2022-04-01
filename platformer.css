@@ -82,7 +82,7 @@ details p{
 
 .img-bg {
   z-index: 1;
-  background: url("Images/Platformer.PNG");
+  background: url("Images/Platformer.png");
   background-position: center center;
   background-size: cover;
   min-height: 400px;
