@@ -175,13 +175,23 @@ a:visited {
 }
 .img-bg-background p{
   color:white;
-  opacity: 0.3;
+  opacity: 0.6;
   margin-top: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   position: absolute;
   left: 20px;
-  top: 375px;
+  top: 395px;
+}
+.img-bg-background #pTwo{
+  color:white;
+  opacity: 0.6;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 425px;
 }
 .content-footer {
   margin: 217px 0;
@@ -429,4 +439,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .dropdown:hover .dropdown-content {
   display: block;
   transition: all 0.1s;
+}
+
+#nl-summary{
+  font-size: 28px;
+  font-weight: 550;
 }
