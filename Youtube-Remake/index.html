@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/04559008fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"  style="border-bottom: 1px solid #dcdcdc;">
+        <div class="topDiv">
+            <h1>
+                <span id="first-Txt">
+                    Any
+                </span>
+                <span id="second-Text">
+                    Tubers
+                </span>
+            </h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Go to top</a>
+                <a class="dropdown-item" href="#bottom">Go to bottom</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">I was out of links</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" style="position:absolute; left:500px; width: 600px;" id="myInput" onkeyup="myFunction()" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" style="position:absolute; right:280px; width: 130px;" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div class="form-check" style="position: absolute; left: 152px; top: 67px; border: 2px solid blue;">
+        <input class="form-check-input" type="checkbox" id="Check1ID">
+        <label class="form-check-label" for="defaultCheck1" style="margin-right: 50px;">
+          All
+        </label>
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label" for="defaultCheck1" style="margin-right: 50px;">
+          Music
+        </label>
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label" for="defaultCheck1"style="margin-right: 50px;">
+          Soccer
+        </label>
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label" for="defaultCheck1"style="margin-right: 50px;">
+          zBrqm Channel
+        </label>
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label" for="defaultCheck1"style="margin-right: 50px;">
+          Gaming
+        </label>
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label" for="defaultCheck1"style="margin-right: 50px;">
+          ZYZZ
+        </label>
+      </div>
+    <div style="min-width:150px;min-height: 1000px; position: absolute; top: 67px; left: 1px; border: 2px solid #484848; background-color: rgba(136, 136, 136, 0.52);">
+        <ul class="nav flex-column">
+            <li class="nav-item active" style="display:flex;justify-content: center;">
+                <i class="fa-solid fa-house"  style="margin-top: 13px;"></i>
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <br>
+            <li class="nav-item" style="display:flex;justify-content: center;">
+                <i class="fa-solid fa-music" style="margin-top: 13px;"></i>
+                    <a class="nav-link active" target="_blank" href="https://open.spotify.com/playlist/1gVYagTwK1xtyFzOLsqSG7?si=fbdd72563ab047e0">Moosic</a>
+            </li><br>
+            <li class="nav-item" style="display:flex;justify-content: center;">
+                <i class="fa-brands fa-youtube" style="margin-top: 13px;"></i>
+              <a class="nav-link" target="_blank" href="https://www.youtube.com/channel/UC1h0EpuYQv9X-0mWKRwJxnA">Youtube</a>
+            </li><br>
+            <li class="nav-item" style="display:flex;justify-content: center;">
+                <i class="fa-brands fa-tiktok" style="margin-top: 13px;"></i>
+              <a class="nav-link" target="_blank" href="https://www.tiktok.com/@yung_kroisand">Tinktonk</a>
+            </li><br>
+            <li class="nav-item" style="display:flex;justify-content: center;">
+                <i class="fa-solid fa-face-grin-tears" style="margin-top: 13px;"></i>
+              <a class="nav-link" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Secret HIHI</a>
+            </li>
+        </ul>
+    
+    </div>
+    
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">A Gampie company</h5>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img width="465px" height="300px" src="IMG/mrkitty.jpg" alt="MrkittyMissing">
+                <p>
+                    Deliver and maintain services, like tracking outages and protecting against spam, fraud, and abuse
+                    Measure audience engagement and site statistics to understand how our services are used
+                    If you agree, we’ll also use cookies and data to:
+                    Improve the quality of our services and develop new ones
+                    Deliver and measure the effectiveness of ads
+                    Show personalized content, depending on your settings
+                    Show personalized or generic ads, depending on your settings, on Google and across the web
+                    For non-personalized content and ads, what you see may be influenced by things like the content you’re currently viewing and your location (ad serving is based on general location). Personalized content and ads can be based on those things and your activity like Google searches and videos you watch on YouTube. Personalized content and ads include things like more relevant results and recommendations, a customized YouTube homepage, and ads that are tailored to your interests.
+                    Click “Close” or "OK" to close this modal. You can also visit 
+                    <a target="_blank" href="https://bram00943.github.io/">
+                        <span class="linkText"> 
+                            bram00943.github.io
+                        </span>
+                    </a>
+                         
+                    anytime.
+                </p> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Row ONE -->
+      <div class="container" style="position:absolute; top:200px; left: 23%;">
+        <div class="row">
+          <div class="col-sm" id="music1">
+            <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" >
+                <img style="width: 57%;" src="IMG/Moosic.jpg" alt="Moosicpngmissing">
+            </a>
+              <br>
+              <div class="mySearch">
+                  <p>
+                    Music
+                  </p>
+   
+              </div>
+
+          </div>
+          <div class="col-sm">
+              <a href="https://www.youtube.com/c/mrkittydm">
+                <img style="width: 200px;" src="IMG/mrkitty.jpg" alt="mrkittypicmissing">
+              </a>
+            
+            <br>
+            Mr Kitty
+          </div>
+          <div class="col-sm">
+              <a href="https://www.youtube.com/results?search_query=soccer">
+                <img style="width: 200px; height: 200px;" src="IMG/soccer.jpg" alt="soccermissing">
+            </a>
+            <br>
+            Soccer
+          </div>
+        </div>
+      </div>
+
+      <!-- Row TWO NUMBER 1!! -->
+      <div class="container" style="position:absolute; top:500px; left: 350px;">
+        <div class="row">
+          <div class="col-sm">
+              <a href="https://www.youtube.com/watch?v=AdBoybKnzZw">
+                <img style="width: 200px; height: 200px;" src="IMG/Zyzz/zyzz1.PNG" alt="Zyzz1Missing">
+              </a>
+              
+              <br>
+                Zyzz - The Legacy
+          </div>
+          <div class="col-sm">
+            <a href="https://www.youtube.com/watch?v=waAlgFq9Xq8">
+                <img style="width: 200px; height: 200px;" src="IMG/mrKitty/Mrkitty1.PNG" alt="mrkitty1Missing">
+            </a>
+            <br>
+            Mr.Kitty - After Dark
+          </div>
+          <div class="col-sm">
+              <a href="https://www.youtube.com/watch?v=-XLe0emyEwE">
+                <img style="width: 200px; height: 200px;" src="IMG/soccerFile/Soccer1.PNG" alt="Soccer1Missing">
+              </a>
+           
+            <br>
+            Funny Soccer Football Vines 2021 <br>
+            ● Goals l Skills l Fails #94
+          </div>
+        </div>
+      </div>
+
+       <!-- Row THREE NUMBER 2!!! SOCCER 2-3 -->
+       <div class="container" style="position:absolute; top:800px; left: 350px;">
+        <div class="row">
+          <div class="col-sm">
+              <a href="https://www.youtube.com/watch?v=aAh2ozG9B9M">
+                <img style="width: 200px; height: 200px;" src="IMG/soccerFile/Soccer2.PNG" alt="Soccer2missing">
+              </a>
+              
+              <br>
+              Funny Soccer Football Vines 2021 <br>
+              ● Goals l Skills l Fails #92
+          </div>
+          <div class="col-sm">
+            <a href="https://www.youtube.com/watch?v=ha1bWS6JCqA">
+                <img style="width: 200px; height: 200px;" src="IMG/soccerFile/Soccer3.PNG" alt="soccer3missing">
+            </a>
+            <br>
+            Funny Soccer Football Vines 2022 <br>
+            ● Goals l Skills l Fails
+          </div>
+          <div class="col-sm">
+              <a href="https://www.youtube.com/watch?v=9FSVPnVLUUQ">
+                <img style="width: 200px; height: 200px;" src="IMG/mrKitty/Mrkitty2.PNG" alt="mrkitty2missing">
+              </a>
+           
+            <br>
+            Mr.Kitty - Destroy Me
+          </div>
+        </div>
+      </div>
+
+       <!-- Row FOUR -->
+       <div class="container" style="position:absolute; top:1100px; left: 350px;">
+        <div class="row">
+          <div class="col-sm">
+              <a href="https://www.youtube.com/watch?v=5OZ-JOSWx1Q">
+                <img style="width: 200px; height: 200px;" src="IMG/Zyzz/zyzz2.PNG" alt="Zyzz2Missing">
+              </a>
+              
+              <br>
+              Tevvez - Legend Ψ
+          </div>
+          <div class="col-sm">
+            <a href="https://www.youtube.com/watch?v=K6WzczzG0x4">
+                <img style="width: 200px; height: 200px;" src="IMG/mrKitty/mrkitty3.PNG" alt="mrkitty3missing">
+            </a>
+            <br>
+            Mr.Kitty - Puzzle Heart <br>
+            (feat. 初音ミク) [Hatsune Miku]
+          </div>
+          <div class="col-sm">
+              <a href="https://www.youtube.com/watch?v=SU1cS1yEMdg&t=2s">
+                <img style="width: 200px; height: 200px;" src="IMG/Zyzz/zyzz4.PNG" alt="zyzz4missing">
+              </a>
+           
+            <br>
+            Zyzz - Dance of God
+          </div>
+        </div>
+      </div>
+
+        <!-- Row FOUR -->
+        <div class="container" style="position:absolute; top:1400px; left: 350px;">
+            <div class="row">
+              <div class="col-sm">
+                  <a href="https://www.youtube.com/watch?v=HBD2sxCgh4k">
+                    <img style="width: 200px; height: 200px;" src="IMG/Zyzz/zyzz5.PNG" alt="zyzz5missing">
+                  </a>
+                  
+                  <br>
+                  F.U.A.R.K.S.T.Y.L.E Zyzz Glimmer of hope Hardstyle
+              </div>
+              <div class="col-sm">
+                <a href="https://www.youtube.com/watch?v=_dA85TulgmI">
+                    <img style="width: 200px; height: 200px;" src="IMG/mrKitty/mrkitty4.PNG" alt="mrkitty4missing">
+                </a>
+                <br>
+                Mr.Kitty - Resurrection
+              </div>
+              <div class="col-sm">
+                  <a href="https://www.youtube.com/watch?v=uSSjzftPUT4">
+                    <img style="width: 200px; height: 200px;" src="IMG/soccerFile/Soccer4.PNG" alt="soccer4missing">
+                  </a>
+               
+                <br>
+                Paulo Dybala 2022 <br>
+                Craziest Skills & Goals - HD
+              </div>
+            </div>
+          </div>
+    
+          <!-- Row Five -->
+        <div class="container" style="position:absolute; top:1700px; left: 350px;">
+            <div class="row">
+              <div class="col-sm">
+                  <a href="https://www.youtube.com/watch?v=HBD2sxCgh4k">
+                    <img style="width: 200px; height: 200px;" src="IMG/zBrqm.PNG" alt="zbrqmmissing">
+                  </a>
+                  
+                  <br>
+                  zbrqm Channel YAY!
+              </div>
+              <div class="col-sm">
+                <a href="https://www.youtube.com/watch?v=_dA85TulgmI">
+                    <img style="width: 200px; height: 200px;" src="IMG/Tyler1.PNG" alt="tyler1missing">
+                </a>
+                <br>
+                TYLER1: NA CANT HANDLE MY BRAND
+              </div>
+              <div class="col-sm" id="bottom">
+                  <a href="https://www.youtube.com/watch?v=KxAUmjS63r8">
+                    <img style="width: 200px; height: 200px;" src="IMG/mizkif.PNG" alt="mizkifmissing">
+                  </a>
+               
+                <br>
+                Mizkif Reveals His Game <br>
+                "Unrooted" for the FIRST TIME!
+              </div>
+            </div>
+          </div>
+    
+
+
+
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#myModal').modal('show'); });
+
+            window.onload = onLoadpage();
+            
+            function onLoadpage(){
+              document.getElementById("Check1ID").checked = true
+  
+            }
+    </script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

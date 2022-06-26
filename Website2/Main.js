@@ -60,22 +60,6 @@ $(document).ready(function ()
         window.localStorage.setItem('todos', all_todos);
     });
     //
-    
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
 
     //Clock
     function showTime(){

@@ -1,0 +1,63 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(224, 223, 223);
+    min-height: 1000px;
+   
+}
+.topDiv{
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 220px;
+    height: 50px;
+    z-index: 2;
+}
+a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #484848;
+}
+a img:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+img:not(:hover){
+    transform: scale(1);
+    transition: all 1s;
+}
+a:hover{
+    color: rgb(37, 37, 37);
+}
+.nav-item:hover{
+    
+    background-color: #969696;
+}
+h1 #first-Txt{
+    color: orange;
+}
+h1  #second-Txt{
+    color: black;
+}
+.btn-secondary{
+    background-color: rgba(0, 128, 0, 0.548);
+}
+.linkText{
+    color: green; 
+    font-weight: 500; 
+    text-decoration: underline;
+}
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-sm {width: 8.33%;}
+    .col-sm {width: 16.66%;}
+    .col-sm {width: 25%;}
+    .col-sm {width: 33.33%;}
+    .col-sm {width: 41.66%;}
+    .col-sm {width: 50%;}
+    .col-sm {width: 58.33%;}
+    .col-sm {width: 66.66%;}
+    .col-sm {width: 75%;}
+    .col-sm {width: 83.33%;}
+    .col-sm {width: 91.66%;}
+    .col-sm {width: 100%;}
+}
