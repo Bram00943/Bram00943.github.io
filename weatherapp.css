@@ -423,7 +423,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   height: 0px;
 }
 
-.dropdown{
+.dropdown{  
+  overflow-x: hidden;
+  overflow: auto;
+  min-width: 250px;
   position: relative;
   display: inline-block;
 }
@@ -437,6 +440,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {
+  cursor: pointer;
   display: block;
   transition: all 0.1s;
 }

@@ -22,7 +22,8 @@
         <img onclick="location.href = 'YtRemake.html';" src="Images/YtRemake.PNG" title="Go to YT Remake" alt="YTPngMissing">
         <img onclick="location.href = 'CssBox.html';" src="Images/Cssbox_NotWide.PNG" title="Go to CSSbox" alt="CssBoxPngMissing">
         <img onclick="location.href = 'Funnel.html';" src="Images/Funnel_notWide.PNG" title="Go to Funnel" alt="FunnelPngMissing">
-        <img onclick="location.href = 'Todo.html';" src="Images/Todo.PNG" title="Go to Funnel" alt="FunnelPngMissing">
+        <img onclick="location.href = 'Todo.html';" src="Images/Todo.PNG" title="Go to TODO" alt="TodoPngMissing">
+        <img onclick="location.href = 'Alarmio.html';" src="Images/Alarmio.PNG" title="Go to Funnel" alt="FunnelPngMissing">
         <p>
           Projects
       </p>
@@ -34,11 +35,11 @@
   </div>
     <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
-    var radius = 360; // how big of the radius
-    var autoRotate = true; // auto rotate or not
-    var rotateSpeed = -120; // unit: seconds/360 degrees
-    var imgWidth = 140; // width of images (unit: px)
-    var imgHeight = 180; // height of images (unit: px)
+    var radius = 360; // Circle Radius
+    var autoRotate = true; // Auto rotate yes no
+    var rotateSpeed = -120; //speed of rotation
+    var imgWidth = 140; // width of images
+    var imgHeight = 180; // height of images
 
     // animation start after 1000 miliseconds
     setTimeout(init, 10);
@@ -48,7 +49,7 @@
     var aImg = ospin.getElementsByTagName('img');
     var aVid = ospin.getElementsByTagName('video');
 
-    var aEle = [...aImg, ...aVid]; // combine 2 arrays
+    var aEle = [...aImg, ...aVid];
 
     // Size of images
     ospin.style.width = imgWidth + "px";
@@ -68,7 +69,7 @@
     }
 
     function applyTranform(obj) {
-    // Constrain the angle of camera (between 0 and 180)
+    // Constrain the angle of camera
         if(tY > 180) tY = 180;
         if(tY < 0) tY = 0;
 
