@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Festive&family=Numans&family=Oxygen:wght@300&family=Permanent+Marker&display=swap');
+body{
+    background-color: #F6F6F7;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+h3{
+    letter-spacing: -0.5px;
+    margin-top: -20px;
+    margin-left: 15px;
+}
+.dot{
+    background-color:orange;
+    height: 10.5px;
+    width: 10.5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot3{
+    position: relative;
+    top: 12px;  
+    left: -30px; 
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2.5px solid orange;
+}
+ol{
+    padding-left: 20px;
+}
+#headOne{
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    height: 65px;
+}
+#headOne h1{
+    margin-top: 15px;
+}
+#sectionOne{
+    background-color: #e6e6e6c2;
+    padding-left: 0px;
+}
+.secOneh3{  
+    padding-top: 45px;
+    margin-left: 22px;
+    font-family: sans-serif;
+    color: orange;
+}
+.projectOneh3{
+    margin-left: 30px;
+    width: 82px;
+    padding-top: 45px;
+    font-family: sans-serif;
+    color: orange;
+}
+.underline{
+    position:relative;
+    top: -15px;
+    margin-left: 0px;
+    width: 341px;
+    color: white;
+    border-bottom: 1px solid #e9e9e9;
+}
+.projectClass{
+    width: 340px;
+    box-shadow: 1px 1px 1px 1px #f0f0f0;
+    border: 2px solid blue;
+}
+#sectionOne p{
+    margin-left: 22px;
+    font-family: Georgia, serif;
+    padding-bottom: 50px;
+}
+.inputWidth{
+    margin-top: 5px;
+    width: 270px;
+    height: 25px;
+    background-color: #F6F6F7;
+    border: 2px solid rgb(180, 180, 180);
+}
+.labelFont{
+    font-family: serif;
+}
+.btn{
+    margin-top: 25px;
+    font-weight: 600;
+    justify-content: flex-end;
+    display: inline-block;
+    border: none;
+    color: white;
+    width: 110px;
+    height: 45px;
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #161616;
+}
+.preBtn{
+    margin-top: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+    border: none;
+    color: black;
+    width: 110px;
+    height: 45px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 1.5px;
+}
+.preBtn:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+input[type='radio']:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(158, 158, 158);
+}
+
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(158, 158, 158);
+}
+.holder{
+    background-color: #F6F6F7;
+    padding: 10px;
+    width: auto;
+}
+.liHolder{
+    margin-left: 20px;
+}
+.btnClass{
+   display: flex;
+}
+.h3class{
+    width: 200px;
+}
+form{
+    margin-left: -30px;
+}
+.img{
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+    transform: rotate(5deg);
+    width: 15px;
+    height: 15px;
+}
+.chooseProjectP{
+    width: 250px;
+    margin-top: 0;
+    margin-left: 55px;
+    margin-bottom: 0;
+}
+.chooseBtn{
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-top: 0;
+    font-weight: 600;
+    justify-content: flex-end;
+    display: inline-block;
+    border: none;
+    color: white;
+    width: 290px;
+    height: 50px;
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+.accordion{
+    background-color: #F6F6F7;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    position:relative;
+    top: 0px;
+    margin-left: -25px;
+    cursor: pointer;
+    width: 200px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.panel{
+    position:relative;
+    top: 15px;
+    width: 305px;
+    padding: 0 18px;
+    background-color: #F6F6F7;
+    display: none;
+    overflow: hidden;
+}

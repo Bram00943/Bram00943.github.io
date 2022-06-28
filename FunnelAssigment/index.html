@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Sint lucas Assessment</title>
+</head>
+<body>
+    <header id="headOne" style="margin-left: 10px;">
+        <h1>FUNNEL <span class="dot"></span></h1>
+    </header>
+    <section id="sectionOne">
+        <br>
+        <div>
+            <h3 class="secOneh3">Some title</h3>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima minus explicabo et officiis cum, odit, est incidunt consequatur quia tempora nemo dolor necessitatibus expedita repudiandae laboriosam perferendis? Velit, perspiciatis non.</p>
+    </section>
+    <br>
+    <div class="holder" style="margin-top: -55px;">
+        <div class="liHolder">
+            <ol>
+                <li>
+                    <span class="dot3"></span>
+                    <button class="accordion">Who are you?</button>
+                    <form action="" class="panel">
+                        <label for="fname" class="labelFont">First name</label>
+                        <br>
+                        <input type="text" id="fname" name="fname" class="inputWidth"><br><br>
+                        <label for="lname" class="labelFont">Last name</label>
+                        <br>
+                        <input type="text" id="lname" name="lname" class="inputWidth"><br><br>
+                        <input type="submit" value="Continue" class="btn" style="margin-bottom: 40px;">
+                    </form>
+                </li>    
+            
+                <li>
+                    <span class="dot3"></span>
+                    <button class="accordion">What is your adress?</button>
+                    <form action="" class="panel">
+                        <label for="zip" class="labelFont">Zip code</label>
+                        <br>
+                        <input type="text" id="fzip" name="fzip" class="inputWidth"><br><br>
+                        <label for="lhousenum" class="labelFont">Housenumber</label>
+                        <br>
+                        <input type="number" id="lhouse" name="lhouse" class="inputWidth" style="width: 85px;"><br><br>
+                        <label for="zip" class="labelFont">Street</label>
+                        <br>
+                        <input type="text" id="fstreetname" name="fstreetname" class="inputWidth"><br><br>
+                        <label for="lhousenum" class="labelFont">City</label>
+                        <br>
+                        <input type="text" id="fcityname" name="fcityname" class="inputWidth"><br><br>
+                        <div class="btnClass">
+                            <input type="submit" value="Previous" class="preBtn">
+                            <input type="submit" value="Continue" class="btn">
+                        </div>
+                        <br>
+                    </form>
+                </li>
+                <li>
+                    <span class="dot3"></span>
+                    <button class="accordion">What is your contact preference?</button>
+                    <form action="" class="panel">
+                        <input type="radio" id="Telephone" name="phone" value="Fphone">
+                        <label for="huey" class="labelFont">Telephone</label>
+                        <input type="radio" id="email" name="mail" value="Fmail">
+                        <label for="huey" class="labelFont">E-mail adress</label>
+                        <br>
+                        <br>
+                        <label for="zip" class="labelFont">Telephone number</label>
+                        <br>
+                        <input type="text" id="fzip" name="fzip" class="inputWidth"><br><br>
+                        <label for="lhousenum" class="labelFont">Email</label>
+                        <br>
+                        <input type="text" id="lhouse" name="lhouse" class="inputWidth"><br><br>
+                        <div class="btnClass">
+                            <input type="submit" value="Previous" class="preBtn">
+                            <input type="submit" value="Continue" class="btn">
+                        </div>
+                    <br>
+                    </form>
+                <li>
+                    <span class="dot3"></span>
+                    <button class="accordion">Choose your project</button>
+                    <div class="panel">
+                        <div id="projectClassONE-ID" class="projectClass">
+                            <h3 class="projectOneh3">Product 1</h3>
+                            <p class="underline">.</p>
+                            <img class="img" src="IMG/checkedgreen.png" alt="checkmarkmissing"> 
+                                <p class="chooseProjectP">
+                                    USP 1
+                                </p>   
+                            <img class="img" src="IMG/checkedgreen.png" alt="checkmarkmissing">
+                                <p class="chooseProjectP">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                            <img class="img" src="IMG/checkedgreen.png" alt="checkmarkmissing">
+                                <p class="chooseProjectP">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                                <p class="underline">.</p>
+                                <div>
+                                    <input type="submit" id="ChooseOne" onclick="changeBorder()" value="Choose this product" class="chooseBtn">
+                                </div>
+                                
+                        </div>
+                        <br>
+                        <div id="projectClassTWO-ID" class="projectClass">
+                            <h3 class="projectOneh3">Product 2</h3>
+                            <p class="underline">.</p>
+                            <img class="img" src="IMG/checkedgreen.png" alt="checkmarkmissing"> 
+                                <p class="chooseProjectP">
+                                    USP 1
+                                </p>   
+                            <img class="img" src="IMG/checkedgreen.png" alt="checkmarkmissing">
+                                <p class="chooseProjectP">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                            <img class="img" src="IMG/checkedgreen.png" alt="checkmarkmissing">
+                                <p class="chooseProjectP">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                                <p class="underline">.</p>
+                                <input type="submit" id="ChooseTwo" onclick="changeBorderTwo()" value="Choose this product" class="chooseBtn">
+                        </div>
+                    </div>
+                    
+                </li>
+            </ol>
+        </div>
+        
+    </div>
+    <script>
+        
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+</body>
+</html>
