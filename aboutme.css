@@ -15,7 +15,6 @@ body {
 
 .masthead {
   padding: 6em 0;
-  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,7 +81,7 @@ section > h1 {
 margin-top: 60px;
   background-position: center center;
   padding: 6em 0;
-  background-image: url('Images/Mebanner.png');
+  background-image: url('Images/MebannerWide.PNG');
   background-size: cover;
   background-repeat: no-repeat;
   border-top: solid 1em #222222;
@@ -366,6 +365,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 
 .dropdown{
+  overflow: auto;
+  min-width: 250px;
   position: relative;
   display: inline-block;
 }
@@ -379,6 +380,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {
+  cursor: pointer;
   display: block;
   transition: all 0.1s;
 }
