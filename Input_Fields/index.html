@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>leukers</title>
+</head>
+<body>
+   <h1>
+       Main Fielders
+   </h1>
+    <div class="div">
+        <h3>Type anything and change text</h3>
+        <form action="#">
+            <label for="fname">Input One:</label>
+            <input type="text" id="changerID" value="">
+            <button class="btn" onclick="ChangeTextFunc()">Change text</button>
+            <p id="changeText">
+                Change meee
+            </p>
+        </form>
+    </div>
+    <br>
+
+    <div class="div">
+        <h3>Times Number</h3>
+        <form action="#">
+            <label for="fname">Input Two:</label>
+            <input type="number" id="nummer" value="">
+            <button class="btn" onclick="DoubleNumberFunc()">Double Num</button>
+            <p id="doubledNumber">
+
+            </p>
+        </form>
+    </div>
+    <br>
+    <div class="div">
+        <h3>Euro to usd converter</h3>
+        <form action="#">
+            <label for="fname">Input Three:</label>
+            <input type="number" id="eurUSD" value="">
+            <button class="btn" onclick="eurotoUSDfunc()">Euro to usd</button>
+            <p id="eurUSDtext">
+
+            </p>
+        </form>
+    </div>
+    <br>
+    <div class="div">
+        <h3>Multiply</h3>
+        <form action="#">
+            <label for="fname">Input Four:</label>
+            <input type="number" id="multiID1" value="">
+            <p>x</p>
+            <input type="number" id="multiID2" value="">
+            <button class="btn" onclick="multiFunc()">Multipyly</button>
+            <p id="multiText">
+            </p>
+        </form>
+    </div>
+    <br>
+    <div class="div">
+        <h3>Celcius to Farhenheit Converter</h3>
+        <form action="#">
+            <label for="fname">Input Five:</label>
+            <input type="number" id="celciusID" value="">
+            <button class="btn" onclick="CelciusFunc()">Celcius to Farh</button>
+            <p id="CelciusText">
+
+            </p>
+        </form>
+    </div>
+    <br>
+    <div class="div">
+        <h3>Calculate Circle area</h3>
+        <form action="#">
+            <label for="fname">Input Six:</label>
+            <input type="number" id="CircleID" value="">
+            <button class="btn" onclick="CalcCircle()">Convert</button>
+            <p id="calcText">
+            </p>
+        </form>
+    </div>
+    <br>
+    <div class="div" id="content7">
+        <h3>Avarage</h3>
+        <form action="#">
+            <label for="fname">Input Seven:</label>
+            <input type="number" id="Avg1" value="">
+            <p>x</p>
+            <input type="number" id="Avg2" value="">
+            <button class="btn" onclick="AvgFunc()">Avarage</button>
+            <p id="AvgText">
+
+            </p>
+        </form>
+    </div>
+    <br>
+    <div class="div">
+        <h3>Fibonacci</h3>
+        <form action="#">
+            <label for="fname">Start:</label>
+            <input type="number" text="text" id="txtloop" />
+        <input type="button" id="btnEnter" value="Enter" onclick="fibonacci(txtloop.value)"/>
+        <p id="output"></p>
+        <p id="demo"></p>
+
+        </form>
+    </div>
+</body>
+</html>

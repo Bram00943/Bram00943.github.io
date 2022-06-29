@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>webbers</title>
+</head>
+<body>
+    <div class="head-div">
+        <h1 class="h1-text">Shoppers</h1>
+        <div style="float: left;" class="p-div">
+            <p>
+                Car 1
+            </p>
+            <img class="img" src="images/futurecar1.jpg" alt="car1">
+            <p class="amount-left-text">
+                Price: $42.750
+            </p>
+            <p id="amountTextID" class="amount-left-text">
+                Quantity: 3
+            </p>
+            
+            <button id="btnID1" class="btn" onclick="upOrDown()">Buy now!</button>
+        </div>
+        <div style="float: left;" class="p-div">
+            <p>
+                Car 2
+            </p>
+            <img class="img" src="images/futurecar2.jpg" alt="car2">
+            <p class="amount-left-text">
+                Price: $51525
+            </p>
+            <p id="amountTextID2" class="amount-left-text">
+                Quantity: 5
+            </p>
+            <button id="btnID2" class="btn" onclick="upOrDown2()">Buy now!</button>
+        </div>
+        <div style="float: left;" class="p-div">
+            <p>
+                Car 3
+            </p>
+            <img class="img" src="images/futurecar3.jpg" alt="car3">
+            <p class="amount-left-text">
+                Price: $120690
+            </p>
+            <p id="amountTextID3" class="amount-left-text">
+                Quantity: 2
+            </p>
+            <button id="btnID3" class="btn" onclick="upOrDown3()"> Buy now!</button>
+        </div>
+        <div style="clear:right" class="p-div">
+            <p>
+                Car 4
+            </p>
+            <img class="img" src="images/futurecar4.jpg" alt="car4">
+            <p class="amount-left-text">
+                Price: $23800,99
+            </p>
+            <p id="amountTextID4" class="amount-left-text">
+                Quantity: 6
+            </p>
+            <button id="btnID4" class="btn" onclick="upOrDown4()">Buy now!</button>
+            
+        </div>
+        <button class="Checkout-button" onclick="Checkout()">Checkout</button>
+        <p id="total1ID">
+            
+        </p>
+        <p id="total2ID">
+
+        </p>
+        <p id="total3ID">
+            
+        </p>
+        <p id="total4ID">
+            
+        </p>
+        <p> -------------------------</p>
+        <p id="totalWithoutTaxesID">
+            
+        </p>
+
+        <p id="taxesID">
+            
+        </p>
+        
+        
+        <p class="CheckoutDiv" id="totalID">
+            Total:
+        </p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    background-color: #888;
+}
+.head-div{
+    background-color: #E9E9E9;
+    margin: auto;
+  width: 50%;
+  border: 10px solid #696773;
+  padding: 300px;
+  text-align: center;
+}
+.h1-text{
+  position: relative;
+  bottom:280px;
+  font-size: 50px;
+}
+div p{
+    font-size: 30px;
+}
+.p-div{
+    background-color: #9c9c9c;
+  width: 50%;
+  border: 5px solid #19181f;
+  padding: 5px;
+  text-align: center;
+}
+.img{
+    width: 320px;
+    height: 200px;
+    border: 4px solid #19181f;
+}
+.amount-left-text{
+    font-size: 20px;
+}
+.btn{
+    font-size: 15px;
+    border: 2px solid rgb(37, 37, 104);
+    border-radius: 5%;
+    width: 110px;
+    height: 50px;
+}
+.btn:hover{
+ box-shadow: 1px 2px 1px 2px rgb(37, 37, 104);   
+ cursor: pointer;
+}
+.Checkout-button{
+    position: absolute;
+    left: 410px;
+    background-color: rgba(128, 255, 0, 0.26);
+    font-size: 20px;
+    border: 3px solid rgb(42, 112, 9);
+    border-radius: 7%;
+    width: 150px;
+    height: 100px;
+}
+.Checkout-button:hover{
+    box-shadow: 1px 2px 1px 2px rgb(151, 241, 76);   
+    cursor: pointer;
+}
+.CheckoutDiv{
+    margin: 100px;
+    background-color: #9c9c9c;
+  width: 50%;
+  border: 5px solid #19181f;
+  padding: 5px;
+  text-align: center;
+}
