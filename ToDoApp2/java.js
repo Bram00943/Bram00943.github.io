@@ -1,5 +1,13 @@
 let count = 0;
 let doneCount = 0;
+
+
+document.addEventListener("keypress", function(e){
+    if (e.key === "Enter"){
+      addTodo();
+    }
+}, false);
+
 function addTodo(){
         //inputValue has now stored the input from the user.
         const inputValue = document.getElementById("input").value;
