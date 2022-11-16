@@ -7,6 +7,7 @@
     <script src="contact.js"></script>
     <script src="https://kit.fontawesome.com/04559008fd.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
+    <script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
     <link rel="Stylesheet" href="contact.css">
     <title>Conctact</title>
 </head>
@@ -49,7 +50,12 @@
             </div>
         </ul>
     </div>
-
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div id="content"></div>
   <div id="container">
     <h1>&bull; Let's keep in Touch &bull;</h1>
     <div class="underline">
@@ -103,5 +109,22 @@
         <li><a href="https://www.tiktok.com/@yung_kroisand" class="social-icon"> <i class="fab fa-tiktok"></i></a></li>
     </ul>
   </div>
+  <script>
+    window.onload = () => { 
+      document.body.style.overflow = 'hidden';
+    }
+    
+    $(document).ready(function() {
+      setTimeout(function() {
+          $('body').addClass('loaded'), showScrollbar();
+      }, 350);
+      
+      function showScrollbar () {
+        setTimeout(function() {
+          document.body.style.overflow = 'visible';
+        }, 1090);
+      }
+    });
+  </script>
 </body>
 </html>

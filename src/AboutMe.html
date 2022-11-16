@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
     <script src="contact.js"></script>
+    <script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" href="aboutme.css">
     <title>About Me</title>
 </head>
@@ -29,6 +30,7 @@
                             <div class="container">
                                 <div class="row"></div>
                                 <div class="dropdown-content">
+                                    <li style="font-size: 15px;"><a href="GampieWestern.html">Western Gampie</a></li>
                                     <li style="font-size: 15px;"><a href="AlmightyCooper.html">Almighty Cooper</a></li>
                                     <li style="font-size: 15px;"><a href="Platformer.html">Platformer</a></li>
                                     <li style="font-size: 15px;"><a href="Shine/Index.html">Shine website</a></li>
@@ -40,7 +42,7 @@
                                     <li style="font-size: 15px;"><a href="Todo.html">TODO App</a></li>
                                     <li style="font-size: 15px;"><a href="Alarmio.html">Alarmio</a></li>
                                     <li style="font-size: 15px;"><a href="Webshop.html">Webshop</a></li>
-                                    <li style="font-size: 15px;"><a href="MainFielders.css">Main Fielders</a></li>
+                                    <li style="font-size: 15px;"><a href="MainFielders.html">Main Fielders</a></li>
                                 </div>
                             </div>
                         </div>
@@ -120,6 +122,29 @@
                     </div>
             </details>
         </section>
+        <div id="loader-wrapper">
+          <div id="loader"></div>
+          <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+        </div>
+        <div id="content"></div>
+        <script>
+          window.onload = () => { 
+            document.body.style.overflow = 'hidden';
+          }
+          
+          $(document).ready(function() {
+            setTimeout(function() {
+                $('body').addClass('loaded'), showScrollbar();
+            }, 350);
+            
+            function showScrollbar () {
+              setTimeout(function() {
+                document.body.style.overflow = 'visible';
+              }, 1090);
+            }
+          });
+        </script>
     <footer class="content-footer">
         <p>@2022</p>
     </footer>
