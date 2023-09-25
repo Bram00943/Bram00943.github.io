@@ -588,3 +588,33 @@ details h1{
   transform: translateY(-100%);
   transition: all 0.3s 1s ease-out;
 }
+
+#cookiePopup {
+  color: #000000;
+  position: absolute;
+  background-color: #dcdcdc;
+  width: 350px;
+  height: 250px;
+}
+
+#cookiePopup button {
+  background-color: green;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 1em 1.4em;
+}
+
+.hide {
+  visibility: hidden;
+  bottom: 0;
+  right: 2em;
+}
+
+.show {
+  position: relative;
+  bottom: 20px;
+  visibility: visible;
+  bottom: 2em;
+  right: 2em;
+}
