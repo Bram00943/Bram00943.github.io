@@ -1,171 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
-        <link rel="stylesheet" href="ytRemake.css">
-        <title>YT remake</title>
-    </head>
-    <body>          
-        <div class="header"></div>
-            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-            <label for="openSidebarMenu" class="sidebarIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
-            </label>
-            <div id="sidebarMenu">
-                <ul class="sidebarMenuInner">
-                    <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
-                    <div class="hoverLi">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="AboutMe.html">About Me</a></li>
-                        <div class="dropdown">
-                            <a href="ProjectsTwo.html"><li style="color: #dcdcdc;">Projects</a></li>
-                            <div class="container">
-                                <div class="row"></div>  
-                                <div class="dropdown-content">
-                                    <li style="font-size: 15px;"><a href="GampieWestern.html">Gampie Western</a></li>
-                                    <li style="font-size: 15px;"><a href="AlmightyCooper.html">Almighty Cooper</a></li>
-                                    <li style="font-size: 15px;"><a href="Platformer.html">Platformer</a></li>
-                                    <li style="font-size: 15px;"><a href="Shine/Index.html">Shine website</a></li>
-                                    <li style="font-size: 15px;"><a href="Website/Index2.html">First website</a></li>
-                                    <li style="font-size: 15px;"><a href="Weatherapp.html">Weather App</a></li>
-                                    <li style="font-size: 15px;"><a href="Cssbox.html">Css box</a></li>
-                                    <li style="font-size: 15px;"><a href="Funnel.html">Funnel</a></li>
-                                    <li style="font-size: 15px;"><a href="Todo.html">TODO App</a></li>
-                                    <li style="font-size: 15px;"><a href="Alarmio.html">Alarmio</a></li>
-                                    <li style="font-size: 15px;"><a href="Webshop.html">Webshop</a></li>
-                                    <li style="font-size: 15px;"><a href="MainFielders.html">Main Fielders</a></li>
-                                </div>
-                            </div>
-                        </div>
-                        <li><a href="Contact.html">Contact</a></li>
-                    <div>
-                </ul>
-            </div>
-        <div id='center' class="main center">
-            </div>
-                <div class="container-fluid">
-                    <a href="Youtube-Remake/index.html" title="Watch Gampie Western">
-                        <header class="img-bg">
-                            <div class="img-bg-background">
-                                <p>Click on banner</p>
-                                <p id="pTwo">
-                                    for website.
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 col-md-push-7"></div>
-                            </div>
-                        </header> 
+<html lang="nl" translate="no" >
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
+    <script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="ytRemake.css">
+    <title>YT remake</title>
+  </head>
+  <body>
+    <div class="header"></div>
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+      <div id="sidebarMenu">
+          <ul class="sidebarMenuInner">
+            <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
+            <div class="hoverLi">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutMe.html">About Me</a></li>
+              <div id="projects-dropdown">
+                <li><a href="ProjectsTwo.html">Projects</a></li>
+                <div class="dropdown-content">
+                  <div class="project-container">
+                    <a href="GampieWestern.html">
+                      <div class="project-card">
+                        <h3>Western Gampie</h3>
+                      </div>
                     </a>
-                </div>  
-                <br>
-                
-                <br>
-                <section>
-                    <details>
-                        <summary>
-                           About YT remake
-                        </summary>
-                        <p>
-                            Here I created an remake of the video sharing platform YouTube. It has just the 
-                            basic functions, you can click on the video, have a little nav bar, has a modal
-                            when you enter the page. This page was made in HTML with Bootstrap, and a little
-                            styling with CSS.
-                        </p>
-                    </details>
-                    <details>
-                        <summary>
-                            My contribution
-                        </summary>
-                        <p>
-                            After I finished the layout that I had created for the website, I decided to try to
-                            add some cool features like YouTube has. But it turned out that was way more diffucult
-                            then I thought it be. I still gave it a few attempts on my own and try to make a search
-                            bar when if you type for a certain song/video it shows only that song that you searched for.
-                            Though I was very close it didn't work perfectly. That was very discouraging, I wouldn't say
-                            that was the reason I quit working on it, but I kinda lost hope because it was hard. And the
-                            solutions that I did found didn't really work on my website. 
-                        </p>
-                    </details>
-                    <details>
-                        <summary>
-                            Conclusion
-                        </summary>
-                        <p>
-                            Now I've learned that it's pretty hard to make a search function that makes sure you only
-                            get the video you have searced for, and even with checkboxes it was still hard, because then I
-                            tried putting the videos in different classes which they represent. Like music, footbal, gaming,
-                            so when you check that class those videos showed up, but that also didn't work in the end.
-                        </p>
-                    </details>
-                    <br>
-                    <br>
-                    <br>
-                        <details>
-                            <summary id="nl-summary">
-                                Nederlands
-                            </summary>
-                            <details>
-                                <summary>
-                                    Over YT remake
-                                </summary>
-                                <p>
-                                    Hier heb ik een remake gemaakt van het videodeelplatform YouTube. Het heeft de gewone
-                                    basisfuncties, je kunt op de video's klikken, een kleine navigatiebalk, een modal
-                                    wanneer je de pagina opent. Deze pagina is gemaakt in HTML en met Bootstrap, en ook een beetje
-                                    styling met CSS.
-                                </p>
-                            </details>
-                            <details>
-                                <summary>
-                                    Mijn bijdrage
-                                </summary>
-                                <p>
-                                    Nadat ik klaar was met de lay-out die ik voor de website had gemaakt, besloot ik om een paar
-                                    coole functies toe te voegen zoals YouTube heeft. Maar dat bleek veel moeilijker te zijn
-                                    toen dacht ik. Ik heb het zelf nog een paar pogingen gedaan en te zoekbalk
-                                    wanneer als je typt voor een bepaald nummer/video,dat alleen dat nummer wordt weergegeven.
-                                    Hoewel ik heel dichtbij was, werkte het niet perfect. Dat was erg teleurstellend, ik niet zeggen
-                                    dat dat de reden was dat ik ermee stopte, maar ik verloor een beetje de hoop door omdat het moeilijk was. En de
-                                    oplossingen die ik wel vond, werkten niet echt op mijn website.
-                                    </p>
-                            </details>
-                            <details>
-                                <summary>
-                                    Conclusie
-                                </summary>
-                                <p>
-                                    Nu heb ik geleerd dat het best moeilijk is om een zoekfunctie te maken die ervoor zorgt dat je alleen de video
-                                    krijg de video waarnaar je hebt gezocht, en zelfs met checkboxes was het nog steeds moeilijk, want toen ik
-                                    probeerde de video's in verschillende klassen te plaatsen die waarin ze pastte, zoals muziek, voetbal, gamen,
-                                    dus toen je die klas aanklikte, kwamen die video's tevoorschijn, maar dat werkte uiteindelijk ook niet.
-                                </p>
-                            </details>
-                        </details>
-                </section>
+                    <a href="AlmightyCooper.html">
+                      <div class="project-card">
+                        <h3>Almighty Cooper</h3>
+                      </div>
+                    </a>
+                    <a href="Platformer.html">
+                      <div class="project-card">
+                        <h3>Platformer</h3>
+                      </div>
+                    </a>
+                    <a href="Shine/Index.html">
+                      <div class="project-card">
+                        <h3>Shine website</h3>
+                      </div>
+                    </a>
+                    <a href="Website/Index2.html">
+                      <div class="project-card">
+                        <h3>First website</h3>
+                      </div>
+                    </a>
+                    <a href="Weatherapp.html">
+                      <div class="project-card">
+                        <h3>Weather App</h3>
+                      </div>
+                    </a>
+                    <a href="YtRemake.html">
+                      <div class="project-card">
+                        <h3>YT remake</h3>
+                      </div>
+                    </a>
+                    <a href="Cssbox.html">
+                      <div class="project-card">
+                        <h3>Css box</h3>
+                      </div>
+                    </a>
+                    <a href="Funnel.html">
+                      <div class="project-card">
+                        <h3>Funnel</h3>
+                      </div>
+                    </a>
+                    <a href="Todo.html">
+                      <div class="project-card">
+                        <h3>TODO App</h3>
+                      </div>
+                    </a>
+                    <a href="Alarmio.html">
+                      <div class="project-card">
+                        <h3>Alarmio</h3>
+                      </div>
+                    </a>
+                    <a href="Webshop.html">
+                      <div class="project-card">
+                        <h3>Webshop</h3>
+                      </div>
+                    </a>
+                    <a href="MainFielders.html">
+                      <div class="project-card">
+                        <h3>Main Fielders</h3>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="project-card">
+                        <h3>Meme Gen</h3>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="project-card">
+                        <h3>Memory Game</h3>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="project-card">
+                        <h3>Slide Reveal</h3>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="project-card">
+                        <h3>Malaysia Population</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <li><a href="Contact.html">Contact</a></li>
+            <div>
+          </ul>
+        </div>
+        <div id='center' class="main center">
+      </div>
+              <div class="container-fluid">
+                  <a href="Youtube-Remake/index.html" title="Watch Gampie Western">
+                      <header class="img-bg">
+                          <div class="img-bg-background">
+                              <p>Click on banner</p>
+                              <p id="pTwo">
+                                  for website.
+                              </p>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-4 col-md-push-7"></div>
+                          </div>
+                      </header> 
+                  </a>
+              </div>  
+              <br>
+              
+              <br>
+              <section>
+                  <details>
+                      <summary>
+                          About YT remake
+                      </summary>
+                      <p>
+                          Here I created an remake of the video sharing platform YouTube. It has just the 
+                          basic functions, you can click on the video, have a little nav bar, has a modal
+                          when you enter the page. This page was made in HTML with Bootstrap, and a little
+                          styling with CSS.
+                      </p>
+                  </details>
+                  <details>
+                      <summary>
+                          My contribution
+                      </summary>
+                      <p>
+                          After I finished the layout that I had created for the website, I decided to try to
+                          add some cool features like YouTube has. But it turned out that was way more diffucult
+                          then I thought it be. I still gave it a few attempts on my own and try to make a search
+                          bar when if you type for a certain song/video it shows only that song that you searched for.
+                          Though I was very close it didn't work perfectly. That was very discouraging, I wouldn't say
+                          that was the reason I quit working on it, but I kinda lost hope because it was hard. And the
+                          solutions that I did found didn't really work on my website. 
+                      </p>
+                  </details>
+                  <details>
+                      <summary>
+                          Conclusion
+                      </summary>
+                      <p>
+                          Now I've learned that it's pretty hard to make a search function that makes sure you only
+                          get the video you have searced for, and even with checkboxes it was still hard, because then I
+                          tried putting the videos in different classes which they represent. Like music, footbal, gaming,
+                          so when you check that class those videos showed up, but that also didn't work in the end.
+                      </p>
+                  </details>
+                  <br>
+                  <br>
+                  <br>
+                      <details>
+                          <summary id="nl-summary">
+                              Nederlands
+                          </summary>
+                          <details>
+                              <summary>
+                                  Over YT remake
+                              </summary>
+                              <p>
+                                  Hier heb ik een remake gemaakt van het videodeelplatform YouTube. Het heeft de gewone
+                                  basisfuncties, je kunt op de video's klikken, een kleine navigatiebalk, een modal
+                                  wanneer je de pagina opent. Deze pagina is gemaakt in HTML en met Bootstrap, en ook een beetje
+                                  styling met CSS.
+                              </p>
+                          </details>
+                          <details>
+                              <summary>
+                                  Mijn bijdrage
+                              </summary>
+                              <p>
+                                  Nadat ik klaar was met de lay-out die ik voor de website had gemaakt, besloot ik om een paar
+                                  coole functies toe te voegen zoals YouTube heeft. Maar dat bleek veel moeilijker te zijn
+                                  toen dacht ik. Ik heb het zelf nog een paar pogingen gedaan en te zoekbalk
+                                  wanneer als je typt voor een bepaald nummer/video,dat alleen dat nummer wordt weergegeven.
+                                  Hoewel ik heel dichtbij was, werkte het niet perfect. Dat was erg teleurstellend, ik niet zeggen
+                                  dat dat de reden was dat ik ermee stopte, maar ik verloor een beetje de hoop door omdat het moeilijk was. En de
+                                  oplossingen die ik wel vond, werkten niet echt op mijn website.
+                                  </p>
+                          </details>
+                          <details>
+                              <summary>
+                                  Conclusie
+                              </summary>
+                              <p>
+                                  Nu heb ik geleerd dat het best moeilijk is om een zoekfunctie te maken die ervoor zorgt dat je alleen de video
+                                  krijg de video waarnaar je hebt gezocht, en zelfs met checkboxes was het nog steeds moeilijk, want toen ik
+                                  probeerde de video's in verschillende klassen te plaatsen die waarin ze pastte, zoals muziek, voetbal, gamen,
+                                  dus toen je die klas aanklikte, kwamen die video's tevoorschijn, maar dat werkte uiteindelijk ook niet.
+                              </p>
+                          </details>
+                      </details>
+              </section>
               <div id="loader-wrapper">
                 <div id="loader"></div>
                 <div class="loader-section section-left"></div>
                 <div class="loader-section section-right"></div>
-              </div>
-              <div id="content"></div>
-            <footer class="content-footer">
-                <p>@2022</p>
-            </footer>
-          <script>
-            window.onload = () => { 
+              </div> 
+            <div id="content"></div>
+          <footer class="content-footer">
+            <p>@2023</p>
+          </footer>
+        <script>
+          window.onload = () => { 
               document.body.style.overflow = 'hidden';
             }
             
             $(document).ready(function() {
               setTimeout(function() {
-                  $('body').addClass('loaded'), showScrollbar();
+                $('body').addClass('loaded'), showScrollbar();
               }, 350);
               
               function showScrollbar () {
@@ -174,6 +247,7 @@
                 }, 1090);
               }
             });
-          </script>
-    </body>
+          
+        </script>
+  </body>
 </html>

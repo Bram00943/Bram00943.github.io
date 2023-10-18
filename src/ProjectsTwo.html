@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,141 +18,147 @@
   </div>
   <div id="content">
   </div>
-<div id="drag-container">
+  <div id="drag-container">
     <div id="spin-container">
-        <img onclick="location.href = 'index.html';" src="Images/index.PNG" title="Go to Home" alt="IndexPngMissing">
-        <img onclick="location.href = 'GampieWestern.html';" src="Images/WesternGampie.PNG" title="Go to Western Gampie" alt="WesternGampPngMissing">
-        <img onclick="location.href = 'AlmightyCooper.html';" src="Images/AlmightyCooper2.PNG" title="Go to Almighty Cooper" alt="AlmightyCooperPngMissing">
-        <img onclick="location.href = 'Platformer.html';" src="Images/Platformer.png" title="Go to Platformer" alt="PlatformerPngMissing">
-        <img onclick="location.href = 'Shine/Index.html';" src="Images/ShineIndex.PNG" title="Go to Shine Page" alt="ShinePngMissing">
-        <img onclick="location.href = 'Website/Index2.html';" src="Images/First_Website.PNG" title="Go to 1st Website" alt="1stWebsitePngMissing">
-        <img onclick="location.href = 'Weatherapp.html';" src="Images/WeatherApp.PNG" title="Go to WeatherApp" alt="WeatherappPngMissing">
-        <img onclick="location.href = 'YtRemake.html';" src="Images/YtRemake.PNG" title="Go to YT Remake" alt="YTPngMissing">
-        <img onclick="location.href = 'CssBox.html';" src="Images/Cssbox_NotWide.PNG" title="Go to CSSbox" alt="CssBoxPngMissing">
-        <img onclick="location.href = 'Funnel.html';" src="Images/Funnel_notWide.PNG" title="Go to Funnel" alt="FunnelPngMissing">
-        <img onclick="location.href = 'Todo.html';" src="Images/Todo.PNG" title="Go to TODO" alt="TodoPngMissing">
-        <img onclick="location.href = 'Alarmio.html';" src="Images/Alarmio.PNG" title="Go to Alarmio" alt="AlarmioPngMissing">
-        <img onclick="location.href = 'Webshop.html';" src="Images/Webshop.PNG" title="Go to Webshop" alt="WebshopPngMissing">
-        <img onclick="location.href = 'MainFielders.html';" src="Images/MainFielders.PNG" title="Go to Webshop" alt="WebshopPngMissing">
-        <p>
-          Projects
+      <img onclick="location.href = 'index.html';" src="Images/index.PNG" title="Go to Home" alt="IndexPngMissing">
+      <img onclick="location.href = 'GampieWestern.html';" src="Images/WesternGampie.PNG" title="Go to Western Gampie" alt="WesternGampPngMissing">
+      <img onclick="location.href = 'AlmightyCooper.html';" src="Images/AlmightyCooper.PNG" title="Go to Almighty Cooper" alt="AlmightyCooperPngMissing">
+      <img onclick="location.href = 'Platformer.html';" src="Images/Platformer.png" title="Go to Platformer" alt="PlatformerPngMissing">
+      <img onclick="location.href = 'Shine/Index.html';" src="Images/ShineIndex.PNG" title="Go to Shine Page" alt="ShinePngMissing">
+      <img onclick="location.href = 'Website/Index2.html';" src="Images/First_Website.PNG" title="Go to 1st Website" alt="1stWebsitePngMissing">
+      <img onclick="location.href = 'Weatherapp.html';" src="Images/WeatherApp.PNG" title="Go to WeatherApp" alt="WeatherappPngMissing">
+      <img onclick="location.href = 'YtRemake.html';" src="Images/YtRemake.PNG" title="Go to YT Remake" alt="YTPngMissing">
+      <img onclick="location.href = 'CssBox.html';" src="Images/Cssbox_NotWide.PNG" title="Go to CSSbox" alt="CssBoxPngMissing">
+      <img onclick="location.href = 'Funnel.html';" src="Images/Funnel_notWide.PNG" title="Go to Funnel" alt="FunnelPngMissing">
+      <img onclick="location.href = 'Todo.html';" src="Images/Todo.PNG" title="Go to TODO" alt="TodoPngMissing">
+      <img onclick="location.href = 'Alarmio.html';" src="Images/Alarmio.PNG" title="Go to Alarmio" alt="AlarmioPngMissing">
+      <img onclick="location.href = 'Webshop.html';" src="Images/Webshop.PNG" title="Go to Webshop" alt="WebshopPngMissing">
+      <img onclick="location.href = 'MainFielders.html';" src="Images/MainFielders.PNG" title="Go to Main Fielders" alt="MainFieldersMissing">
+      <img id="development" onclick="location.href = '#';" src="Images/Untitled.png" title="Go to Meme Gen" alt="MemegenMissing">
+      <img id="development" onclick="location.href = '#';" src="Images/Untitled.png" title="Go to Memory Game Internship" alt="Memory">
+      <img id="development" onclick="location.href = '#';" src="Images/Untitled.png" title="Go to Reveal Internship" alt="RevealPngMissing">
+      <img id="development" onclick="location.href = '#';" src="Images/Untitled.png" title="Go to Malaysia pupolation Page" alt="map missing">
+
+      
+      <p>
+        Projects
       </p>
       <p id="pStyle">
-          Hold and drag your mouse to look around!
+        Hold and drag your mouse to look around!
       </p>
     </div>
-        <div id="ground"></div>
+    <div id="ground"></div>
   </div>
-    <script>    
-      $(document).ready(function() {
-        setTimeout(function() {
-            $('body').addClass('loaded');
-        }, 1100);
-      });
-      
-      document.addEventListener('contextmenu', event => event.preventDefault());
-      var radius = 340; // Circle Radius
-      var autoRotate = true; // Auto rotate yes no
-      var rotateSpeed = -120; //speed of rotation
-      var imgWidth = 120; // width of images
-      var imgHeight = 160; // height of images
-      
-      // animation start after 1350 miliseconds
-      setTimeout(init, 1350);
-      
-      var odrag = document.getElementById('drag-container');
-      var ospin = document.getElementById('spin-container');
-      var aImg = ospin.getElementsByTagName('img');
-      var aVid = ospin.getElementsByTagName('video');
-      
-      var aEle = [...aImg, ...aVid];
-      
-      // Size of images
-      ospin.style.width = imgWidth + "px";
-      ospin.style.height = imgHeight + "px";
-      
-      // Size of ground - depend on radius
-      var ground = document.getElementById('ground');
-      ground.style.width = radius * 3 + "px";
-      ground.style.height = radius * 3 + "px";
-      
-      function init(delayTime) {
-      for (var i = 0; i < aEle.length; i++) {
-          aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
-          aEle[i].style.transition = "transform 1s";
-          aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
+  <script>
+    $(document).ready(function() {
+      setTimeout(function() {
+        $('body').addClass('loaded');
+      }, 1100);
+    });
+    
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    let radius = 420; // Circle Radius
+    const autoRotate = true; // Auto rotate yes no
+    const rotateSpeed = -120; //speed of rotation
+    const imgWidth = 90; // width of images
+    const imgHeight = 130; // height of images
+    
+    // animation start after 1350 miliseconds
+    setTimeout(init, 1350);
+    
+    const odrag = document.getElementById('drag-container');
+    const ospin = document.getElementById('spin-container');
+    const aImg = ospin.getElementsByTagName('img');
+    
+    let aEle = [...aImg];
+    
+    // Size of images
+    ospin.style.width = imgWidth + "px";
+    ospin.style.height = imgHeight + "px";
+    
+    // Size of ground - depend on radius
+    let ground = document.getElementById('ground');
+    ground.style.width = radius * 3 + "px";
+    ground.style.height = radius * 3 + "px";
+    
+    function init(delayTime) {
+      for (let i = 0; i < aEle.length; i++) {
+        aEle[i].style.transform = "rotateY(" + ((aEle.length - i) * (-360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
+        aEle[i].style.transition = "transform 1s";
+        aEle[i].style.transitionDelay = delayTime || i / 5 + "s";
       }
-      }
-      
-      function applyTranform(obj) {
+    }
+    
+    function applyTranform(obj) {
       // Constrain the angle of camera
-          if(tY > 180) tY = 180;
-          if(tY < 0) tY = 0;
-        
+      if(tY > 180) tY = 180;
+      if(tY < 0) tY = 0;
+      
       // Apply the angle
-          obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
-      }
+      obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
+    }
+    
+    function playSpin(yes) {
+      ospin.style.animationPlayState = (yes?'running':'paused');
+    }
+    
+    let sX, sY, nX, nY, desX = 0,
+      desY = 0,
+      tX = 0,
+      tY = 10;
+    
+    // auto spin
+    if (autoRotate) {
+      let animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
+      ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
+    }
+    
+    // setup events
+    document.onpointerdown = function (e) {
+      clearInterval(odrag.timer);
+      e = e || window.event;
+      let sX = e.clientX,
+        sY = e.clientY;
       
-      function playSpin(yes) {
-          ospin.style.animationPlayState = (yes?'running':'paused');
-      }
-      
-      var sX, sY, nX, nY, desX = 0,
-          desY = 0,
-          tX = 0,
-          tY = 10;
-      
-      // auto spin
-      if (autoRotate) {
-          var animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
-          ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
-      }
-      
-      // setup events
-      document.onpointerdown = function (e) {
-          clearInterval(odrag.timer);
-          e = e || window.event;
-          var sX = e.clientX,
-              sY = e.clientY;
-            
-          this.onpointermove = function (e) {
-              e = e || window.event;
-              var nX = e.clientX,
-                  nY = e.clientY;
-              desX = nX - sX;
-              desY = nY - sY;
-              tX += desX * 0.1;
-              tY += desY * 0.1;
-              applyTranform(odrag);
-              sX = nX;
-              sY = nY;
+      this.onpointermove = function (e) {
+        e = e || window.event;
+        let nX = e.clientX,
+         nY = e.clientY;
+        desX = nX - sX;
+        desY = nY - sY;
+        tX += desX * 0.1;
+        tY += desY * 0.1;
+        applyTranform(odrag);
+        sX = nX;
+        sY = nY;
       };
       
       this.onpointerup = function (e) {
-          odrag.timer = setInterval(function () {
-          desX *= 0.95;
-          desY *= 0.95;
-          tX += desX * 0.1;
-          tY += desY * 0.1;
-          applyTranform(odrag);
-          playSpin(false);
-          if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
-              clearInterval(odrag.timer);
-              playSpin(true);
-          }
-          }, 17);
-          this.onpointermove = this.onpointerup = null;
+        odrag.timer = setInterval(function () {
+        desX *= 0.95;
+        desY *= 0.95;
+        tX += desX * 0.1;
+        tY += desY * 0.1;
+        applyTranform(odrag);
+        playSpin(false);
+        if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+          clearInterval(odrag.timer);
+          playSpin(true);
+        }
+        }, 17);
+        this.onpointermove = this.onpointerup = null;
       };
-      
-          return false;
-      };
-      
-      document.onmousewheel = function(e) {
-          e = e || window.event;
-          var d = e.wheelDelta / 20 || -e.detail;
-          radius += d;
-          init(1);
-      };
-    </script>
+    
+      return false;
+    };
+    
+    document.onmousewheel = function(e) {
+      e = e || window.event;
+      let d = e.wheelDelta / 20 || -e.detail;
+      radius += d;
+      init(1);
+    };
+    let currentImage = 0;
+  </script>
 </body>
 </html>

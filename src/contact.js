@@ -1,41 +1,35 @@
-window.addEventListener("DOMContentLoaded", function(){
+window.addEventListener("DOMContentLoaded", function () {
+  let form = document.getElementById("my-form");
+  let status = document.getElementById("status");
 
-
-  var form = document.getElementById("my-form");
-  var status = document.getElementById("status")
-
-
-  function succes(){
+  function succes() {
     form.reset();
-    status.classList.add('succes')
+    status.classList.add("succes");
     status.innerHTML = "Thanks!";
   }
-  function error(){
-    status.classList.add('error')
+  function error() {
+    status.classList.add("error");
     status.innerHTML = "Oops! There was an problem.";
   }
 
-  form.addEventListener("submit", function (ev){
+  form.addEventListener("submit", function (ev) {
     ev.preventDefault();
-    var data = new FormData(form);
-    ajax(form.method, form.action, data, succes, error)
+    let data = new FormData(form);
+    ajax(form.method, form.action, data, succes, error);
   });
 });
 
-function ajax(method, url, data, succes, error){
-  var xhr = new XMLHttpRequest();
+function ajax(method, url, data, succes, error) {
+  let xhr = new XMLHttpRequest();
   xhr.open(method, url);
   xhr.setRequestHeader("Accept", "application/json");
-  xhr.onreadystatechange = function(){
-    if(xhr.readyState !== XMLHttpRequest.DONE) return;
-    if(xhr.status === 200){
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
       succes(xhr.response, xhr.responseType);
-    }else{
+    } else {
       error(xhr.status, xhr.response, xhr.responseType);
     }
   };
   xhr.send(data);
 }
-
-
-
