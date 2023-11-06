@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="nl" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
+    <script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="malaysia.css">
+    <title>Inhabitants of Malaysia</title>
+</head>
+<body>          
+  <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
+        <div class="hoverLi">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutMe.html">About Me</a></li>
+          <div id="projects-dropdown">
+            <li><a href="ProjectsTwo.html">Projects</a></li>
+            <div class="dropdown-content">
+              <div class="project-container">
+                <a href="GampieWestern.html">
+                  <div class="project-card">
+                    <h3>Western Gampie</h3>
+                  </div>
+                </a>
+                <a href="AlmightyCooper.html">
+                  <div class="project-card">
+                    <h3>Almighty Cooper</h3>
+                  </div>
+                </a>
+                <a href="Platformer.html">
+                  <div class="project-card">
+                    <h3>Platformer</h3>
+                  </div>
+                </a>
+                <a href="Shine/Index.html">
+                  <div class="project-card">
+                    <h3>Shine website</h3>
+                  </div>
+                </a>
+                <a href="Website/Index2.html">
+                  <div class="project-card">
+                    <h3>First website</h3>
+                  </div>
+                </a>
+                <a href="Weatherapp.html">
+                  <div class="project-card">
+                    <h3>Weather App</h3>
+                  </div>
+                </a>
+                <a href="YtRemake.html">
+                  <div class="project-card">
+                    <h3>YT remake</h3>
+                  </div>
+                </a>
+                <a href="Cssbox.html">
+                  <div class="project-card">
+                    <h3>Css box</h3>
+                  </div>
+                </a>
+                <a href="Funnel.html">
+                  <div class="project-card">
+                    <h3>Funnel</h3>
+                  </div>
+                </a>
+                <a href="Todo.html">
+                  <div class="project-card">
+                    <h3>TODO App</h3>
+                  </div>
+                </a>
+                <a href="Alarmio.html">
+                  <div class="project-card">
+                    <h3>Alarmio</h3>
+                  </div>
+                </a>
+                <a href="Webshop.html">
+                  <div class="project-card">
+                    <h3>Webshop</h3>
+                  </div>
+                </a>
+                <a href="MainFielders.html">
+                  <div class="project-card">
+                    <h3>Main Fielders</h3>
+                  </div>
+                </a>
+                <a href="Meme_gen.html">
+                  <div class="project-card">
+                    <h3>Meme Gen</h3>
+                  </div>
+                </a>
+                <a href="Memory_game_int.html">
+                  <div class="project-card">
+                    <h3>Memory Game</h3>
+                  </div>
+                </a>
+                <a href="slide_shape.html">
+                  <div class="project-card">
+                    <h3>Slide Reveal</h3>
+                  </div>
+                </a>
+                <a href="malaysia.html">
+                  <div class="project-card">
+                    <h3>Malaysia Population</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  <div id='center' class="main center"></div>
+    <div class="container-fluid">
+      <a href="https://www.youtube.com/watch?v=4vJH1_H6X9A&t" title="Watch Gampie Western">
+        <header class="img-bg">
+          <div class="img-bg-background">
+            <p>Click on banner</p>
+            <p id="pTwo">
+              for video.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-md-push-7"></div>
+          </div>
+        </header> 
+      </a>
+    </div>  
+    <br>
+    
+    <br>
+    <section>
+      <details>
+        <summary>
+          About Malaysia Inhabitants
+        </summary>
+        <p>
+          This is a project where I've worked on with someone else. For this project we needed to get data from a 
+          webservice, where we used this postman API to get the Inhabitants of malaysia. Our innitial goal was to
+          get the amount of people vaccinations to show but while developing we accidentally collected and showed
+          the data of the total Inhabitants of malaysia. We've done this per state so you could click on the state
+          and it would show the amount of Inhabitants of that state. This project had a deadline, which meant we had
+          to get our priorities straight. Since our innitial goal was to display the amount of vaccinated people in
+          a state and instead we got the amount of Inhabitants per state, we kind of missed our goal.
+        </p>
+      </details>
+      <details>
+        <summary>
+          My contribution
+        </summary>
+        <p>
+          I have mainly been focussing on the front-end of this application since that is where my interest lies most.
+          The map itself is essentially just an SVG which I've modified so that if you hover a certain state the color of
+          that state in the svg changes. First the whole svg changed colors but after some testing and developing I got
+          it the way it is now. I essentially styled everything on the page that you see in the video, added some transitions
+          here and there. When we were near the end of the project I tried some developing in the backend aswell but the time
+          window was too small so that's why you'll see in the video data missing since that is what we could not finish
+          within the deadline of the project.
+        </p>
+      </details>
+    </section>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <div id="content"></div>
+  <footer class="content-footer">
+      <p>@2023</p>
+  </footer>
+  <script>
+    window.onload = () => { 
+      document.body.style.overflow = 'hidden';
+    }
+    
+    $(document).ready(function() {
+      setTimeout(function() {
+          $('body').addClass('loaded'), showScrollbar();
+      }, 350);
+      
+      function showScrollbar () {
+        setTimeout(function() {
+          document.body.style.overflow = 'visible';
+        }, 1090);
+      }
+    });
+  </script>
+</body>
+</html>
