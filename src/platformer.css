@@ -78,7 +78,7 @@ details p {
 
 .img-bg {
   z-index: 1;
-  background: url("Images/Platformer.png");
+  background: url("Images/platformerWide2.PNG");
   background-position: center center;
   background-size: cover;
   min-height: 400px;
