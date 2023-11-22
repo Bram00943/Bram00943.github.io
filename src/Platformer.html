@@ -1,211 +1,215 @@
 <!DOCTYPE html>
-<html lang="nl" translate="no" >
+<html lang="nl" translate="no">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="icon" type="image/icon" href="Images/BFavicon.png"/>
-    <script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
-    <link rel="stylesheet" href="platformer.css">
-    <title>Platformer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/icon" href="Images/BFavicon.png" />
+  <script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="platformer.css">
+  <title>Platformer</title>
 </head>
+
 <body>
-    <div class="header"></div>
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-    <label for="openSidebarMenu" class="sidebarIconToggle">
+  <div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
     <div class="spinner diagonal part-1"></div>
     <div class="spinner horizontal"></div>
     <div class="spinner diagonal part-2"></div>
-    </label>
-    <div id="sidebarMenu">
-        <ul class="sidebarMenuInner">
-            <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
-            <div class="hoverLi">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="AboutMe.html">About Me</a></li>
-                <div id="projects-dropdown">
-                  <li><a href="ProjectsTwo.html">Projects</a></li>
-                  <div class="dropdown-content">
-                    <div class="project-container">
-                      <a href="GampieWestern.html">
-                        <div class="project-card">
-                          <h3>Western Gampie</h3>
-                        </div>
-                      </a>
-                      <a href="AlmightyCooper.html">
-                        <div class="project-card">
-                          <h3>Almighty Cooper</h3>
-                        </div>
-                      </a>
-                      <a href="Platformer.html">
-                        <div class="project-card">
-                          <h3>Platformer</h3>
-                        </div>
-                      </a>
-                      <a href="Shine/Index.html">
-                        <div class="project-card">
-                          <h3>Shine website</h3>
-                        </div>
-                      </a>
-                      <a href="Website/Index2.html">
-                        <div class="project-card">
-                          <h3>First website</h3>
-                        </div>
-                      </a>
-                      <a href="Weatherapp.html">
-                        <div class="project-card">
-                          <h3>Weather App</h3>
-                        </div>
-                      </a>
-                      <a href="YtRemake.html">
-                        <div class="project-card">
-                          <h3>YT remake</h3>
-                        </div>
-                      </a>
-                      <a href="Cssbox.html">
-                        <div class="project-card">
-                          <h3>Css box</h3>
-                        </div>
-                      </a>
-                      <a href="Funnel.html">
-                        <div class="project-card">
-                          <h3>Funnel</h3>
-                        </div>
-                      </a>
-                      <a href="Todo.html">
-                        <div class="project-card">
-                          <h3>TODO App</h3>
-                        </div>
-                      </a>
-                      <a href="Alarmio.html">
-                        <div class="project-card">
-                          <h3>Alarmio</h3>
-                        </div>
-                      </a>
-                      <a href="Webshop.html">
-                        <div class="project-card">
-                          <h3>Webshop</h3>
-                        </div>
-                      </a>
-                      <a href="MainFielders.html">
-                        <div class="project-card">
-                          <h3>Main Fielders</h3>
-                        </div>
-                      </a>
-                      <a href="Meme_gen.html">
-                        <div class="project-card">
-                          <h3>Meme Gen</h3>
-                        </div>
-                      </a>
-                      <a href="Memory_game_int.html">
-                        <div class="project-card">
-                          <h3>Memory Game</h3>
-                        </div>
-                      </a>
-                      <a href="slide_shape.html">
-                        <div class="project-card">
-                          <h3>Slide Reveal</h3>
-                        </div>
-                      </a>
-                      <a href="malaysia.html">
-                        <div class="project-card">
-                          <h3>Malaysia Population</h3>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li id="topLi">Bram Nieuwland <span>Software Developer</span></li>
+      <div class="hoverLi">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutMe.html">About Me</a></li>
+        <div id="projects-dropdown">
+          <li><a href="ProjectsTwo.html">Projects</a></li>
+          <div class="dropdown-content">
+            <div class="project-container">
+              <a href="GampieWestern.html">
+                <div class="project-card">
+                  <h3>Western Gampie</h3>
                 </div>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <div id='center' class="main center">
-    </div>
-        <div class="container-fluid">
-            <a href="https://youtu.be/Ge3UJbQTaNg" title="Watch Platformer">
-                <header class="img-bg">
-                    <div class="img-bg-background">
-                        <p>Click on banner</p>
-                        <p id="pTwo">
-                            for video.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-md-push-7"></div>
-                    </div>
-                </header> 
-            </a>
-        </div>  
-        <br>
-        
-        <br>
-        <section>
-            <details>
-                <summary>
-                    About Platformer
-                </summary>
-                <p>
-                    This game is as simple as it can get, it's literally a platformer with a death counter
-                    and a collectable system. It may not sound as something special, but I did try my best
-                    to make something out of it. Where as the gameplay goes, there isn't very much to do
-                    except just collect the collectables and not trying to die. Though I have to say the 
-                    colors make it seem a lot better then it actually is.
-                </p>
-            </details>
-            <details>
-                <summary>
-                    My contribution
-                </summary>
-                <p>
-                  I just wanted to make a Platformer and so I did. Like mentioned before it isn't much
-                  because while I was making this I still had school assignments to finish in time. And
-                  because of that this game of mine didn't really get that much attention, so I added the
-                  most important functions and tried to spice up the levels a bit with some creativity.
-                  I really liked to design the levels with hidden collectables and creating the death counter.
-                  Aside from that I also tried adding an animation for the character but kind of failed, because
-                  I was very new to Unity back then, and adding an animation was pretyy hard for me.
-                </p>
-            </details>
-            <details>
-              <summary>
-                  Conclusion
-              </summary>
-              <p>
-                I really like making platformer games and with some creative ideas I'm sure I, or with others
-                can create a lot of fun platformer games. I now and then get some great ideas for a game but 
-                since I'm still learning I cannot put all of those ideas into reality. Because often I think 
-                way too big for my knowledge, so keeping it small and simple is hard.
-              </p>
-            </details>
-            <br>
-            <br>
-            <br>
-        </section>
-        <div id="loader-wrapper">
-          <div id="loader"></div>
-          <div class="loader-section section-left"></div>
-          <div class="loader-section section-right"></div>
+              </a>
+              <a href="AlmightyCooper.html">
+                <div class="project-card">
+                  <h3>Almighty Cooper</h3>
+                </div>
+              </a>
+              <a href="Platformer.html">
+                <div class="project-card">
+                  <h3>Platformer</h3>
+                </div>
+              </a>
+              <a href="Shine/Index.html">
+                <div class="project-card">
+                  <h3>Shine website</h3>
+                </div>
+              </a>
+              <a href="Website/Index2.html">
+                <div class="project-card">
+                  <h3>First website</h3>
+                </div>
+              </a>
+              <a href="Weatherapp.html">
+                <div class="project-card">
+                  <h3>Weather App</h3>
+                </div>
+              </a>
+              <a href="YtRemake.html">
+                <div class="project-card">
+                  <h3>YT remake</h3>
+                </div>
+              </a>
+              <a href="Cssbox.html">
+                <div class="project-card">
+                  <h3>Css box</h3>
+                </div>
+              </a>
+              <a href="Funnel.html">
+                <div class="project-card">
+                  <h3>Funnel</h3>
+                </div>
+              </a>
+              <a href="Todo.html">
+                <div class="project-card">
+                  <h3>TODO App</h3>
+                </div>
+              </a>
+              <a href="Alarmio.html">
+                <div class="project-card">
+                  <h3>Alarmio</h3>
+                </div>
+              </a>
+              <a href="Webshop.html">
+                <div class="project-card">
+                  <h3>Webshop</h3>
+                </div>
+              </a>
+              <a href="MainFielders.html">
+                <div class="project-card">
+                  <h3>Main Fielders</h3>
+                </div>
+              </a>
+              <a href="Meme_gen.html">
+                <div class="project-card">
+                  <h3>Meme Gen</h3>
+                </div>
+              </a>
+              <a href="Memory_game_int.html">
+                <div class="project-card">
+                  <h3>Memory Game</h3>
+                </div>
+              </a>
+              <a href="slide_shape.html">
+                <div class="project-card">
+                  <h3>Slide Reveal</h3>
+                </div>
+              </a>
+              <a href="malaysia.html">
+                <div class="project-card">
+                  <h3>Malaysia Population</h3>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        <div id="content"></div>
-    <footer class="content-footer">
-        <p>@2023</p>
-    </footer>
-    <script>
-      window.onload = () => { 
-        document.body.style.overflow = 'hidden';
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id='center' class="main center">
+  </div>
+  <div class="container-fluid">
+    <a href="https://youtu.be/Ge3UJbQTaNg" title="Watch Platformer">
+      <header class="img-bg">
+        <div class="img-bg-background">
+          <p>Click on banner</p>
+          <p id="pTwo">
+            for video.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-push-7"></div>
+        </div>
+      </header>
+    </a>
+  </div>
+  <br>
+
+  <br>
+  <section>
+    <details>
+      <summary>
+        About Platformer
+      </summary>
+      <p>
+        This game is as simple as it can get, it's literally a platformer with a death counter
+        and a collectable system. It may not sound as something special, but I did try my best
+        to make something out of it. Where as the gameplay goes, there isn't very much to do
+        except just collect the collectables and not trying to die. Though I have to say the
+        colors make it seem a lot better then it actually is.
+      </p>
+    </details>
+    <details>
+      <summary>
+        My contribution
+      </summary>
+      <p>
+        I just wanted to make a Platformer and so I did. Like mentioned before it isn't much
+        because while I was making this I still had school assignments to finish in time. And
+        because of that this game of mine didn't really get that much attention, so I added the
+        most important functions and tried to spice up the levels a bit with some creativity.
+        I really liked to design the levels with hidden collectables and creating the death counter.
+        Aside from that I also tried adding an animation for the character but kind of failed, because
+        I was very new to Unity back then, and adding an animation was pretyy hard for me.
+      </p>
+    </details>
+    <details>
+      <summary>
+        Conclusion
+      </summary>
+      <p>
+        I really like making platformer games and with some creative ideas I'm sure I, or with others
+        can create a lot of fun platformer games. I now and then get some great ideas for a game but
+        since I'm still learning I cannot put all of those ideas into reality. Because often I think
+        way too big for my knowledge, so keeping it small and simple is hard.
+      </p>
+    </details>
+    <br>
+    <br>
+    <br>
+  </section>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <div id="content"></div>
+  <footer class="content-footer">
+    <p>@2023</p>
+  </footer>
+  <script>
+    window.onload = () => {
+      document.body.style.overflow = 'hidden';
+    }
+
+    $(document).ready(function () {
+      setTimeout(function () {
+        $('body').addClass('loaded'), showScrollbar();
+      }, 350);
+
+      function showScrollbar() {
+        setTimeout(function () {
+          document.body.style.overflow = 'visible';
+        }, 1090);
       }
-      
-      $(document).ready(function() {
-        setTimeout(function() {
-            $('body').addClass('loaded'), showScrollbar();
-        }, 350);
-        
-        function showScrollbar () {
-          setTimeout(function() {
-            document.body.style.overflow = 'visible';
-          }, 1090);
-        }
-      });
-    </script>
+    });
+  </script>
 </body>
+
 </html>
