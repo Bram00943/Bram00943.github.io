@@ -701,12 +701,12 @@ details h1 {
 }
 
 .bar.python::before {
-  width: calc(30% - 10px);
+  width: calc(25% - 10px);
   background-color: #4d90ad;
 }
 
 .bar.python-flask::before {
-  width: calc(40% - 10px);
+  width: calc(30% - 10px);
   background-color: #4d90ad;
 }
 
@@ -721,8 +721,13 @@ details h1 {
 }
 
 .bar.ue5::before {
-  width: calc(25% - 10px);
+  width: calc(18% - 10px);
   background-color: #0b235b;
+}
+
+.bar.node::before {
+  width: calc(48% - 10px);
+  background-color: #8bc500;
 }
 
 /* Soft skills */
